@@ -2,30 +2,29 @@ name: Robô Quantitativo de Apostas
 
 on:
   schedule:
-    # Roda a cada 15 minutos automaticamente na nuvem
     - cron: '*/15 * * * *'
-  workflow_dispatch: # Permite que você continue podendo rodar manualmente se quiser
+  workflow_dispatch:
 
 jobs:
   build:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout do código
-      uses: actions/checkout@v3
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
 
-    - name: Configurar Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: Instalar dependências
-      run: |
-        pip install requests
+      - name: Instalar dependências
+        run: |
+          pip install requests
 
-    - name: Executar o Robô
-      env:
-        JSONBIN_KEY: ${{ secrets.JSONBIN_KEY }}
-        RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
-      run: |
-        python robo_master.py
+      - name: Executar o Robô
+        env:
+          JSONBIN_KEY: ${{ secrets.JSONBIN_KEY }}
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        run: |
+          python robo_master.py
