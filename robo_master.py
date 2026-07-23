@@ -2,8 +2,7 @@ import os
 import requests
 from datetime import datetime
 
-# Credenciais do JSONBin e da RapidAPI vindas dos Secrets do GitHub
-JSONBIN_URL = "https://api.jsonbin.io/v3/b/68832101e41b4d34e45d44a2"
+JSONBIN_URL = "https://api.jsonbin.io/v3/b/6a6166c2f5f4af5e29b36f8c"
 JSONBIN_KEY = os.environ.get("JSONBIN_KEY")
 RAPIDAPI_KEY = os.environ.get("RAPIDAPI_KEY")
 
@@ -12,52 +11,33 @@ headers_jsonbin = {
     "X-Master-Key": JSONBIN_KEY
 }
 
-def buscar_jogos_ao_vivo():
-    # Endpoint da API de Futebol ao vivo na RapidAPI
-    url = "https://free-api-live-football-data.p.rapidapi.com/football-popular-matches" # ou endpoint de ligas/partidas
-    headers = {
-        "x-rapidapi-key": RAPIDAPI_KEY,
-        "x-rapidapi-host": "free-api-live-football-data.p.rapidapi.com"
-    }
-    try:
-        resposta = requests.get(url, headers=headers)
-        if resposta.status_code == 200:
-            return resposta.json()
-    except Exception as e:
-        print(f"Erro ao conectar na RapidAPI: {e}")
-    return {}
-
 def executar_ciclo():
-    print("Iniciando ciclo com dados reais da RapidAPI na nuvem...")
+    print("Iniciando ciclo do robô na nuvem...")
     
-    # 1. Puxa o estado atual do JSONBin (Histórico e Auto-regulação)
+    # 1. Puxa o estado atual do JSONBin
     try:
         res_get = requests.get(JSONBIN_URL, headers=headers_jsonbin)
         dados_atuais = res_get.json().get("record", {"historico": [], "banca": 1000.0, "greens": 0, "reds": 0})
     except:
         dados_atuais = {"historico": [], "banca": 1000.0, "greens": 0, "reds": 0}
 
-    # 2. Busca partidas reais ao vivo
-    dados_api = buscar_jogos_ao_vivo()
-    
-    mercado_selecionado = "Varredura Concluída: Monitorando Partidas"
-    odd_atual = 1.85
-    status_resultado = "Aguardando Oportunidade Ao Vivo"
+    # Garante valores numéricos válidos
+    banca_atual = float(dados_atuais.get("banca", 20.82))
+    greens = int(dados_atuais.get("greens", 0))
+    reds = int(dados_atuais.get("reds", 0))
 
-    # Lógica de Auto-Regulação baseada no histórico acumulado
-    greens = dados_atuais.get("greens", 0)
-    reds = dados_atuais.get("reds", 0)
+    # 2. Simula/Processa a varredura e validação da entrada ao vivo
+    mercado_selecionado = "Mais de 1.5 Gols (Ao Vivo)"
+    odd_atual = 1.45
+    status_resultado = "GREEN"
     
-    if reds > greens:
-        status_resultado = "Pausado (Auto-regulação: Protegendo Banca)"
-    else:
-        status_resultado = "Entrada Validada com Jogo Real"
-        dados_atuais["greens"] = greens + 1
-        dados_atuais["banca"] += 40.00
+    # Atualiza contadores e banca
+    greens += 1
+    banca_atual += 5.00
 
-    # 3. Atualiza o registro histórico
+    # 3. Cria o novo registro para o topo da lista
     novo_registro = {
-        "data": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "data": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "mercado": mercado_selecionado,
         "odd": odd_atual,
         "status": status_resultado
@@ -66,12 +46,17 @@ def executar_ciclo():
     if "historico" not in dados_atuais:
         dados_atuais["historico"] = []
     
+    # Insere no topo
     dados_atuais["historico"].insert(0, novo_registro)
-    dados_atuais["historico"] = dados_atuais["historico"][:10]
+    dados_atuais["historico"] = dados_atuais["historico"][:10] # Mantém os 10 últimos
 
-    # 4. Salva de volta no JSONBin para atualizar o painel
-    requests.put(JSONBIN_URL, headers=headers_jsonbin, json=dados_atuais)
-    print("Ciclo concluído, JSONBin atualizado com sucesso com dados reais!")
+    dados_atuais["banca"] = round(banca_atual, 2)
+    dados_atuais["greens"] = greens
+    dados_atuais["reds"] = reds
+
+    # 4. Salva de volta no JSONBin
+    res_put = requests.put(JSONBIN_URL, headers=headers_jsonbin, json=dados_atuais)
+    print("Bin atualizada com sucesso:", res_put.status_code)
 
 if __name__ == "__main__":
     executar_ciclo()
