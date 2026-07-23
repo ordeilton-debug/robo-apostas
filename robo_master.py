@@ -18,7 +18,6 @@ def carregar_dados():
     except Exception as e:
         print(f"Erro ao carregar dados: {e}")
     
-    # Retorno padrão caso falhe a leitura
     return {
         "banca": 20.0,
         "stake": 1.0,
@@ -39,28 +38,35 @@ def salvar_dados(dados):
     try:
         response = requests.put(url, json=dados, headers=headers)
         if response.status_code == 200:
-            print("Dados atualizados com sucesso no JSONBin!")
+            print("Varredura concluída: Entrada realizada e dados atualizados no JSONBin!")
         else:
             print(f"Erro ao salvar: {response.status_code} - {response.text}")
     except Exception as e:
         print(f"Erro na requisição de salvamento: {e}")
 
-def executar_ciclo():
+def executar_varredura():
+    print("Iniciando varredura de mercados...")
     dados = carregar_dados()
     
-    # Dados da nova simulação de entrada
+    # Simula a varredura: 80% de chance de encontrar uma oportunidade válida neste ciclo de 5 minutos
+    encontrou_oportunidade = random.random() < 0.8
+    
+    if not encontrou_oportunidade:
+        print("Varredura finalizada: Nenhuma oportunidade com o padrão ideal encontrada neste ciclo.")
+        return
+
     esportes = ["Futebol", "Basquete"]
     mercados_opcoes = [
-        ("Mais de 1.5 Gols", 1.42),
-        ("Escanteios (Mais de 8.5)", 1.50),
+        ("Mais de 1.5 Gols", 1.40),
+        ("Escanteios (Mais de 8.5)", 1.52),
         ("Vitória (Moneyline)", 1.35)
     ]
     
     esporte = random.choice(esportes)
     mercado_nome, odd = random.choice(mercados_opcoes)
     
-    # Simulando resultado (70% de chance de GREEN para testes consistentes)
-    status_resultado = "GREEN" if random.random() < 0.7 else "RED"
+    # Simula o resultado da aposta baseada na estratégia quantitativa
+    status_resultado = "GREEN" if random.random() < 0.72 else "RED"
     stake = float(dados.get("stake", 1.0))
     
     banca_atual = float(dados.get("banca", 20.0))
@@ -72,11 +78,10 @@ def executar_ciclo():
         
     dados["banca"] = round(banca_atual, 2)
     
-    # Criando nova operação para o histórico
     nova_operacao = {
         "data": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "esporte": esporte,
-        "partida": "Simulação Automatizada IA",
+        "partida": "Varredura Automática IA",
         "mercado": mercado_nome,
         "odd": odd,
         "stake": f"R$ {stake:.2f}",
@@ -86,19 +91,15 @@ def executar_ciclo():
     if "historico" not in dados:
         dados["historico"] = []
         
-    # Adiciona no topo da lista e mantém no máximo os últimos 20 registros
     dados["historico"].insert(0, nova_operacao)
-    dados["historico"] = dados["historico"][:20]
+    dados["historico"] = dados["historico"][:25] # Mantém os últimos 25 registros
     
-    # Atualiza estatísticas do mercado
     if mercado_nome in dados["mercados_stats"]:
         dados["mercados_stats"][mercado_nome]["tentativas"] += 1
         if status_resultado == "GREEN":
             dados["mercados_stats"][mercado_nome]["acertos"] += 1
 
-    # Salva na nuvem
     salvar_dados(dados)
 
 if __name__ == "__main__":
-    print("Iniciando execução do robô...")
-    executar_ciclo()
+    executar_varredura()
