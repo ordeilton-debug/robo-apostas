@@ -1,7 +1,7 @@
-# robo_master.py - Sistema Completo Autônomo (Arquivo Único)
+# robo_master.py - Scanner Global de Futebol, Basquete e Esports (Value Bets)
 import requests
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # ================= CONFIGURAÇÕES =================
 ODDS_API_KEY = "toa_live_l6296elsleop719g"
@@ -16,26 +16,31 @@ REGION = "br,eu"
 MARKET = "h2h"
 BANCA_INICIAL = 1000.00
 FRACAO_KELLY = 0.25      # 25% do Kelly Pleno
-LIMIAR_VALOR = 0.03      # 3% de edge mínimo
+LIMIAR_VALOR = 0.02      # 2% de edge mínimo
 BASE_URL = "https://api.the-odds-api.com/v4"
 # ==================================================
 
 def buscar_odds(esporte: str):
     url = f"{BASE_URL}/sports/{esporte}/odds"
+    
+    # Janela para pegar jogos recentes/ao vivo e os próximos
+    agora_utc = datetime.utcnow()
+    inicio_janela = (agora_utc - timedelta(hours=3)).strftime("%Y-%m-%dT%SZ")
+    
     params = {
         "apiKey": ODDS_API_KEY,
         "regions": REGION,
         "markets": MARKET,
         "oddsFormat": "decimal",
+        "commenceTimeFrom": inicio_janela
     }
     try:
         resposta = requests.get(url, params=params, timeout=15)
         if resposta.status_code != 200:
-            print(f"Erro ao buscar odds de {esporte}: {resposta.status_code} - {resposta.text}")
             return []
         return resposta.json()
     except Exception as e:
-        print(f"Erro de conexão ao buscar odds: {e}")
+        print(f"Erro de conexão ao buscar odds para {esporte}: {e}")
         return []
 
 def calcular_criterio_kelly(banca, odd, prob):
@@ -71,17 +76,38 @@ def salvar_no_jsonbin(nova_aposta):
                 dados_atuais = []
         
         dados_atuais.append(nova_aposta)
-        
-        resposta_put = requests.put(url, headers=headers, json=dados_atuais)
-        if resposta_put.status_code != 200:
-            print(f"Erro ao atualizar JSONBin: {resposta_put.status_code} - {resposta_put.text}")
+        requests.put(url, headers=headers, json=dados_atuais)
     except Exception as e:
         print(f"Erro de conexão com JSONBin: {e}")
 
 def analisar_e_escanear():
-    print("🔍 Buscando odds reais na API...")
+    print("🔍 Escaneando Futebol, Basquete e Esports...")
     
-    esportes = ['soccer_brazil_campeonato']
+    # Lista organizada com Futebol, Basquete e Esports adicionados
+    esportes = [
+        # Futebol
+        'soccer_brazil_campeonato',
+        'soccer_conmebol_copa_libertadores',
+        'soccer_conmebol_copa_sudamericana',
+        'soccer_uefa_champions_league',
+        'soccer_uefa_europa_league',
+        'soccer_england_premier_league',
+        'soccer_spain_la_liga',
+        'soccer_italy_serie_a',
+        'soccer_germany_bundesliga',
+        'soccer_france_ligue_one',
+        'soccer_argentina_primera_division',
+        # Basquete
+        'basketball_nba',
+        'basketball_euroleague',
+        'basketball_FIBA_world_cup',
+        'basketball_brazil_NBB',
+        # Esports (Adicionados)
+        'esports_counter_strike',
+        'esports_league_of_legends',
+        'esports_dota2',
+        'esports_valorant'
+    ]
     
     for esporte in esportes:
         eventos = buscar_odds(esporte)
@@ -96,7 +122,7 @@ def analisar_e_escanear():
                 for market in bookmaker.get('markets', []):
                     if market['key'] == 'h2h':
                         outcomes = market.get('outcomes', [])
-                        if len(outcomes) < 3:
+                        if len(outcomes) < 2:
                             continue
                             
                         odds = [o['price'] for o in outcomes]
@@ -116,7 +142,7 @@ def analisar_e_escanear():
                                 mensagem = (
                                     f"🚨 *ALERTA DE VALUE BET* 🚨\n\n"
                                     f"🏆 **Liga:** {liga}\n"
-                                    f"⚽ **Partida:** {partida}\n"
+                                    f"🎮⚽🏀 **Partida:** {partida}\n"
                                     f"🏛️ **Casa:** {bookmaker['title']}\n"
                                     f"📊 **Seleção:** {nomes[i]}\n"
                                     f"📈 **Odd:** {odd_ofertada}\n"
