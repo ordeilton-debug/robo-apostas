@@ -11,9 +11,10 @@ headers_jsonbin = {
 }
 
 RAPID_KEY = "8fe1560859msh147035b0a5858f7p1e150bjsn15dbc6e0f450"
+data_hoje = datetime.now().strftime("%Y-%m-%d")
 
 try:
-  # 1. Pega os dados atuais do Jsonbin (Painel)
+  # 1. Pega os dados atuais do Jsonbin
   res_get = requests.get(JSONBIN_URL, headers=headers_jsonbin)
   dados_atuais = res_get.json().get(
       "record", {"historico": [], "banca": 20.82, "greens": 0, "reds": 0}
@@ -26,67 +27,58 @@ try:
   if "historico" not in dados_atuais:
     dados_atuais["historico"] = []
 
-  # Escolhe aleatoriamente qual API consultar
-  escolha_modalidade = random.choice(
-      ["futebol_vivo", "futebol_virtual", "basquete_nba"]
-  )
-
   partida_encontrada = None
   camp_escolhido = None
   mercado_escolhido = None
   odd_escolhida = None
 
-  if escolha_modalidade == "futebol_vivo":
-    url = "https://free-api-live-football-data.p.rapidapi.com/football-matches-live"
-    headers = {
-        "content-type": "application/json",
-        "x-rapidapi-host": "free-api-live-football-data.p.rapidapi.com",
-        "x-rapidapi-key": RAPID_KEY,
-    }
-    res = requests.get(url, headers=headers)
-    if res.status_code == 200:
-      jogos = res.json().get("response", [])
-      if jogos and len(jogos) > 0:
-        j = random.choice(jogos)
-        camp_escolhido = j.get("league", {}).get("name", "Futebol Ao Vivo")
-        home = j.get("homeTeam", {}).get("name", "Time Casa")
-        away = j.get("awayTeam", {}).get("name", "Time Fora")
-        partida_encontrada = f"{home} x {away}"
-        mercado_escolhido = "Mais de 1.5 Gols (Ao Vivo)"
-        odd_escolhida = 1.42
+  # Tenta buscar do Futebol Ao Vivo / Programado
+  url_futebol = (
+      f"https://free-api-live-football-data.p.rapidapi.com/football-matches-live"
+  )
+  headers_futebol = {
+      "content-type": "application/json",
+      "x-rapidapi-host": "free-api-live-football-data.p.rapidapi.com",
+      "x-rapidapi-key": RAPID_KEY,
+  }
 
-  elif escolha_modalidade == "futebol_virtual":
-    url = "https://futebol-virtual-bet3651.p.rapidapi.com/last-updated"
-    headers = {
-        "content-type": "application/x-www-form-urlencoded",
-        "x-rapidapi-host": "futebol-virtual-bet3651.p.rapidapi.com",
-        "x-rapidapi-key": RAPID_KEY,
-    }
-    payload = {"league-euro": "1", "home": "bet365", "sport_id": "1"}
-    res = requests.post(url, headers=headers, data=payload)
-    if res.status_code == 200:
-      conteudo = res.json()
-      # Verifica se a API retornou dados reais estruturados
-      camp_escolhido = "Futebol Virtual 🎮 (Bet365)"
-      partida_encontrada = "Cyber Virtual Match (API Real)"
-      mercado_escolhido = "Ambas Marcam (Virtual)"
-      odd_escolhida = 1.85
+  res_fut = requests.get(url_futebol, headers=headers_futebol)
+  if res_fut.status_code == 200:
+    conteudo_fut = res_fut.json()
+    jogos = conteudo_fut.get("response", [])
+    if jogos:
+      j = random.choice(jogos)
+      camp_escolhido = j.get("league", {}).get("name", "Futebol Profissional")
+      home = j.get("homeTeam", {}).get("name", "Equipe Mandante")
+      away = j.get("awayTeam", {}).get("name", "Equipe Visitante")
+      partida_encontrada = f"{home} x {away}"
+      mercado_escolhido = "Mais de 1.5 Gols"
+      odd_escolhida = 1.48
 
-  else:  # Basquete NBA
-    url = "https://api-basketball-nba.p.rapidapi.com/team/depth?teamId=16"
-    headers = {
+  # Se o futebol ao vivo estiver vazio, tenta a API de Basquete com endpoint de jogos por data
+  if not partida_encontrada:
+    url_basquete = f"https://api-basketball-nba.p.rapidapi.com/games?date={data_hoje}"
+    headers_basquete = {
         "content-type": "application/json",
         "x-rapidapi-host": "api-basketball-nba.p.rapidapi.com",
         "x-rapidapi-key": RAPID_KEY,
     }
-    res = requests.get(url, headers=headers)
-    if res.status_code == 200:
-      camp_escolhido = "Basquete 🏀 (NBA)"
-      partida_encontrada = "NBA Live Feed Match"
-      mercado_escolhido = "Mais de 215.5 Pontos"
-      odd_escolhida = 1.90
+    res_basq = requests.get(url_basquete, headers=headers_basquete)
+    if res_basq.status_code == 200:
+      conteudo_basq = res_basq.json()
+      jogos_basq = conteudo_basq.get("response", [])
+      if jogos_basq:
+        jb = random.choice(jogos_basq)
+        camp_escolhido = "Basquete 🏀 (NBA / Internacionais)"
+        # Extrai os nomes dos times da API de basquete real
+        teams = jb.get("teams", {})
+        home_b = teams.get("home", {}).get("name", "Mandante NBA")
+        away_b = teams.get("away", {}).get("name", "Visitante NBA")
+        partida_encontrada = f"{home_b} x {away_b}"
+        mercado_escolhido = "Total Mais de 214.5 Pontos"
+        odd_escolhida = 1.90
 
-  # SE A API RETORNOU UM JOGO REAL, REGISTRA NO PAINEL. SE NÃO, NÃO FAZ NADA.
+  # Se encontrou partida real em qualquer uma das APIs, registra no painel
   if partida_encontrada:
     nova_aposta = {
         "data": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -111,14 +103,14 @@ try:
         JSONBIN_URL, headers=headers_jsonbin, json=dados_atuais
     )
     print(
-        f"Sucesso real! Partida inserida: {partida_encontrada} | Status:"
+        f"Sucesso real! Inserido: {partida_encontrada} | Status:"
         f" {res_put.status_code}"
     )
   else:
     print(
-        "Nenhum jogo retornado pela API neste ciclo. Nenhuma entrada fictícia"
-        " foi criada."
+        "Nenhum jogo retornado no momento atual pelas APIs. O workflow"
+        " encerrou sem inserir dados vazios."
     )
 
 except Exception as e:
-  print("Erro técnico ao processar a API:", e)
+  print("Erro na execução:", e)
