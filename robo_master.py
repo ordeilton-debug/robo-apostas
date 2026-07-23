@@ -1,8 +1,7 @@
-# robo_master.py - Sistema Completo Integrado com Telegram e JSONBin.io
+# robo_master.py - Sistema Completo Autônomo (Arquivo Único)
 import requests
 import json
 from datetime import datetime
-from odds_api import buscar_odds
 
 # ================= CONFIGURAÇÕES =================
 ODDS_API_KEY = "toa_live_l6296elsleop719g"
@@ -18,7 +17,26 @@ MARKET = "h2h"
 BANCA_INICIAL = 1000.00
 FRACAO_KELLY = 0.25      # 25% do Kelly Pleno
 LIMIAR_VALOR = 0.03      # 3% de edge mínimo
+BASE_URL = "https://api.the-odds-api.com/v4"
 # ==================================================
+
+def buscar_odds(esporte: str):
+    url = f"{BASE_URL}/sports/{esporte}/odds"
+    params = {
+        "apiKey": ODDS_API_KEY,
+        "regions": REGION,
+        "markets": MARKET,
+        "oddsFormat": "decimal",
+    }
+    try:
+        resposta = requests.get(url, params=params, timeout=15)
+        if resposta.status_code != 200:
+            print(f"Erro ao buscar odds de {esporte}: {resposta.status_code} - {resposta.text}")
+            return []
+        return resposta.json()
+    except Exception as e:
+        print(f"Erro de conexão ao buscar odds: {e}")
+        return []
 
 def calcular_criterio_kelly(banca, odd, prob):
     b = odd - 1
