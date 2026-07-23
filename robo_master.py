@@ -1,41 +1,24 @@
-# robo_master.py - Sistema Completo Integrado de Value Betting
+# robo_master.py - Sistema Completo Integrado com Telegram e JSONBin.io
 import requests
-import sqlite3
-import pandas as pd
+import json
 from datetime import datetime
+from odds_api import buscar_odds
 
 # ================= CONFIGURAÇÕES =================
-API_KEY_ODDS = "sua_chave_api_odds_aqui"
-
-# Configurações do Telegram (Chat ID já ajustado com o seu)
-TELEGRAM_TOKEN = "COLE_O_TOKEN_DO_BOT_FATHER_AQUI"
+ODDS_API_KEY = "toa_live_l6296elsleop719g"
+TELEGRAM_TOKEN = "8971175524:AAEtdsBH4urEM_n7p7_I4iamWCTfkwMCNlg"
 TELEGRAM_CHAT_ID = "205555409"
 
-BANCA_INICIAL = 1000.00
-FRACAO_KELLY = 0.25      # 25% do Kelly Pleno para segurança
-LIMIAR_VALOR = 0.03      # 3% de edge mínimo exigido
-DB_NAME = "apostas.db"
-# ==================================================
+# Configurações do JSONBin.io
+JSONBIN_ID = "6a6166c2f5f4af5e29b36f8c"
+JSONBIN_KEY = "$2a$10$nkhtoMSSze53SGdX4zIyuuG9AQDrgqelRjxIivfNseGcbXi9OLrg6"
 
-def inicializar_banco():
-    conn = sqlite3.connect(DB_NAME)
-    cursor = conn.cursor()
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS historico_apostas (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            data TEXT,
-            liga TEXT,
-            partida TEXT,
-            mercado TEXT,
-            odd_ofertada REAL,
-            probabilidade_justa REAL,
-            edge REAL,
-            stake_sugerida REAL,
-            resultado_real INTEGER
-        )
-    """)
-    conn.commit()
-    conn.close()
+REGION = "br,eu"
+MARKET = "h2h"
+BANCA_INICIAL = 1000.00
+FRACAO_KELLY = 0.25      # 25% do Kelly Pleno
+LIMIAR_VALOR = 0.03      # 3% de edge mínimo
+# ==================================================
 
 def calcular_criterio_kelly(banca, odd, prob):
     b = odd - 1
@@ -46,79 +29,99 @@ def calcular_criterio_kelly(banca, odd, prob):
     return round(banca * f_star * FRACAO_KELLY, 2)
 
 def enviar_telegram(mensagem):
-    if TELEGRAM_TOKEN == "COLE_O_TOKEN_DO_BOT_FATHER_AQUI":
-        print(f"[MODO TESTE - TELEGRAM NÃO CONFIGURADO]\n{mensagem}\n")
-        return
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": mensagem, "parse_mode": "Markdown"}
     try:
-        response = requests.post(url, json=payload)
-        return response.json()
+        requests.post(url, json=payload)
     except Exception as e:
         print(f"Erro ao enviar Telegram: {e}")
 
-def analisar_e_escanear():
-    print("🔍 Escaneando mercado em busca de apostas de valor...")
-    
-    # Exemplo simulado de aposta analisada (substitua futuramente pela chamada real da API)
-    aposta_exemplo = {
-        "liga": "Futebol - Rodada",
-        "partida": "Time da Casa vs Visitante",
-        "mercado": "H2H (1X2)",
-        "odd_ofertada": 2.10,
-        "probabilidade_justa": 0.52 
+def salvar_no_jsonbin(nova_aposta):
+    url = f"https://api.jsonbin.io/v3/b/{JSONBIN_ID}"
+    headers = {
+        "Content-Type": "application/json",
+        "X-Master-Key": JSONBIN_KEY
     }
     
-    edge = (aposta_exemplo["probabilidade_justa"] * aposta_exemplo["odd_ofertada"]) - 1
-    
-    if edge >= LIMIAR_VALOR:
-        stake = calcular_criterio_kelly(BANCA_INICIAL, aposta_exemplo["odd_ofertada"], aposta_exemplo["probabilidade_justa"])
-        
-        mensagem = (
-            f"🚨 *ALERTA DE VALUE BET* 🚨\n\n"
-            f"🏆 **Liga:** {aposta_exemplo['liga']}\n"
-            f"⚽ **Partida:** {aposta_exemplo['partida']}\n"
-            f"📊 **Mercado:** {aposta_exemplo['mercado']}\n"
-            f"📈 **Odd:** {aposta_exemplo['odd_ofertada']}\n"
-            f"💡 **Edge (Vantagem):** {edge*100:.2f}%\n"
-            f"💰 **Stake Sugerida (Kelly):** R$ {stake}"
-        )
-        
-        enviar_telegram(mensagem)
-        
-        # Salvando no banco de dados SQLite para o Backtesting futuro
-        conn = sqlite3.connect(DB_NAME)
-        cursor = conn.cursor()
-        cursor.execute("""
-            INSERT INTO historico_apostas (data, liga, partida, mercado, odd_ofertada, probabilidade_justa, edge, stake_sugerida, resultado_real)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, NULL)
-        """, (str(datetime.now()), aposta_exemplo['liga'], aposta_exemplo['partida'], aposta_exemplo['mercado'], 
-              aposta_exemplo['odd_ofertada'], aposta_exemplo['probabilidade_justa'], edge, stake))
-        conn.commit()
-        conn.close()
-
-def rodar_backtesting():
-    conn = sqlite3.connect(DB_NAME)
     try:
-        df = pd.read_sql("SELECT * FROM historico_apostas WHERE resultado_real IS NOT NULL", conn)
-    except:
-        df = pd.DataFrame()
-    conn.close()
+        resposta_get = requests.get(url, headers=headers)
+        dados_atuais = []
+        if resposta_get.status_code == 200:
+            conteudo = resposta_get.json()
+            dados_atuais = conteudo.get("record", [])
+            if not isinstance(dados_atuais, list):
+                dados_atuais = []
+        
+        dados_atuais.append(nova_aposta)
+        
+        resposta_put = requests.put(url, headers=headers, json=dados_atuais)
+        if resposta_put.status_code != 200:
+            print(f"Erro ao atualizar JSONBin: {resposta_put.status_code} - {resposta_put.text}")
+    except Exception as e:
+        print(f"Erro de conexão com JSONBin: {e}")
 
-    if df.empty:
-        print("⚠️ Sem resultados finalizados no banco para calcular o Backtesting.")
-        return
-
-    df['lucro'] = df.apply(lambda r: (r['odd_ofertada'] - 1) * r['stake_sugerida'] if r['resultado_real'] == 1 else -r['stake_sugerida'], axis=1)
-    roi = (df['lucro'].sum() / df['stake_sugerida'].sum()) * 100
+def analisar_e_escanear():
+    print("🔍 Buscando odds reais na API...")
     
-    print("="*35)
-    print(f"📊 BACKTESTING: {len(df)} apostas validadas.")
-    print(f"💵 Lucro Total: R$ {df['lucro'].sum():.2f}")
-    print(f"📈 ROI do Sistema: {roi:.2f}%")
-    print("="*35)
+    esportes = ['soccer_brazil_campeonato']
+    
+    for esporte in esportes:
+        eventos = buscar_odds(esporte)
+        if not eventos:
+            continue
+            
+        for evento in eventos:
+            partida = f"{evento.get('home_team')} vs {evento.get('away_team')}"
+            liga = evento.get('sport_title', esporte)
+            
+            for bookmaker in evento.get('bookmakers', []):
+                for market in bookmaker.get('markets', []):
+                    if market['key'] == 'h2h':
+                        outcomes = market.get('outcomes', [])
+                        if len(outcomes) < 3:
+                            continue
+                            
+                        odds = [o['price'] for o in outcomes]
+                        nomes = [o['name'] for o in outcomes]
+                        
+                        inv_odds = [1/odd for odd in odds]
+                        overround = sum(inv_odds)
+                        prob_justas = [inv / overround for inv in inv_odds]
+                        
+                        for i, odd_ofertada in enumerate(odds):
+                            prob_justa = prob_justas[i]
+                            edge = (prob_justa * odd_ofertada) - 1
+                            
+                            if edge >= LIMIAR_VALOR:
+                                stake = calcular_criterio_kelly(BANCA_INICIAL, odd_ofertada, prob_justa)
+                                
+                                mensagem = (
+                                    f"🚨 *ALERTA DE VALUE BET* 🚨\n\n"
+                                    f"🏆 **Liga:** {liga}\n"
+                                    f"⚽ **Partida:** {partida}\n"
+                                    f"🏛️ **Casa:** {bookmaker['title']}\n"
+                                    f"📊 **Seleção:** {nomes[i]}\n"
+                                    f"📈 **Odd:** {odd_ofertada}\n"
+                                    f"💡 **Edge:** {edge*100:.2f}%\n"
+                                    f"💰 **Stake (Kelly):** R$ {stake}"
+                                )
+                                
+                                enviar_telegram(mensagem)
+                                
+                                registro_aposta = {
+                                    "data": str(datetime.now()),
+                                    "liga": liga,
+                                    "partida": partida,
+                                    "casa": bookmaker['title'],
+                                    "selecao": nomes[i],
+                                    "odd_ofertada": odd_ofertada,
+                                    "probabilidade_justa": prob_justa,
+                                    "edge": edge,
+                                    "stake_sugerida": stake,
+                                    "resultado_real": None
+                                }
+                                
+                                salvar_no_jsonbin(registro_aposta)
 
 if __name__ == "__main__":
-    inicializar_banco()
     analisar_e_escanear()
-    rodar_backtesting()
