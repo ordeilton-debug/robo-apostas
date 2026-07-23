@@ -10,6 +10,7 @@ headers_jsonbin = {
 }
 
 try:
+  # 1. Pega os dados atuais do Jsonbin
   res_get = requests.get(JSONBIN_URL, headers=headers_jsonbin)
   dados_atuais = res_get.json().get(
       "record", {"historico": [], "banca": 20.82, "greens": 0, "reds": 0}
@@ -22,13 +23,13 @@ try:
   if "historico" not in dados_atuais:
     dados_atuais["historico"] = []
 
-  # Inserção de validação técnica em tempo real
+  # 2. Insere a entrada de teste forçada para validar o painel em tempo real
   nova_aposta = {
       "data": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-      "campeonato": "API Live Feed - Status OK",
-      "partida": "Conexão Estabelecida x Sincronização Ativa",
-      "mercado": "Validação de Sistema",
-      "odd": 1.75,
+      "campeonato": "Futebol Internacional (Live Test)",
+      "partida": "Test Match FC x Global United",
+      "mercado": "Mais de 1.5 Gols",
+      "odd": 1.65,
       "status": "APOSTA EM ANDAMENTO",
   }
 
@@ -42,13 +43,14 @@ try:
   dados_atuais["greens"] = greens
   dados_atuais["reds"] = reds
 
+  # 3. Salva no Jsonbin
   res_put = requests.put(
       JSONBIN_URL, headers=headers_jsonbin, json=dados_atuais
   )
   print(
-      "Teste de conexão gravado com sucesso! Status do Jsonbin:"
+      "Entrada de teste inserida com sucesso! Status do Jsonbin:"
       f" {res_put.status_code}"
   )
 
 except Exception as e:
-  print("Erro:", e)
+  print("Erro ao atualizar o painel:", e)
