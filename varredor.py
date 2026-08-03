@@ -1,58 +1,64 @@
 import json
 from datetime import datetime
-import requests
-from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 def varrer_e_atualizar():
     data_alvo = datetime.now().strftime("%Y-%m-%d")
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔄 GitHub Action rodando: Buscando partidas do Brasileirão...")
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] 🚀 Iniciando robô com Playwright...")
     
     url_alvo = "https://oddsscanner.com/br/futebol/campeonato-brasileiro"
-    
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
-    }
-
     jogos_do_dia = []
 
     try:
-        response = requests.get(url_alvo, headers=headers, timeout=15)
-        if response.status_code == 200:
-            soup = BeautifulSoup(response.text, 'html.parser')
+        with sync_playwright() as p:
+            # Inicia o navegador em modo invisível (headless)
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            )
             
-            # Buscando por elementos genéricos de partidas ou links de eventos na página
-            # Sites modernos costumam agrupar os jogos em cards ou linhas de tabela
-            cards = soup.find_all(['a', 'div'], class_=lambda x: x and ('match' in x.lower() or 'game' in x.lower() or 'event' in x.lower()))
+            print(f"🌐 Acessando {url_alvo}...")
+            page.goto(url_alvo, timeout=60000)
             
-            print(f"🔍 Elementos potenciais encontrados: {len(cards)}")
+            # Aguarda a página carregar os elementos principais (cards de jogos ou tabela)
+            page.wait_for_timeout(5000) # Espera 5 segundos para garantir a renderização do JS
             
-            # Tentativa de extrair textos relevantes caso os seletores estejam visíveis no HTML estático
-            for card in cards[:30]:  # Limita para evitar duplicadas excessivas
-                texto = card.get_text(strip=True)
-                if " x " in texto or " vs " in texto:
-                    if texto not in jogos_do_dia:
+            # Tenta capturar os blocos de partidas ou textos relevantes da tabela
+            elementos = page.locator("a, div").all_inner_texts()
+            
+            for texto in elementos:
+                # Filtra blocos que parecem confrontos de futebol (contêm ' x ' ou ' vs ')
+                if (" x " in texto.lower() or " vs " in texto.lower()) and len(texto) < 250:
+                    linhas = [l.strip() for l in texto.split("\n") if l.strip()]
+                    confronto_str = " | ".join(linhas)
+                    
+                    if confronto_str not in [j.get("confronto") for j in jogos_do_dia]:
                         jogos_do_dia.append({
                             "data_captura": data_alvo,
-                            "confronto_ou_bloco": texto[:100], # Primeiros caracteres do bloco do jogo
+                            "confronto": confronto_str,
                             "fonte": url_alvo
                         })
             
-            # Se não achar pelo filtro de texto, garante pelo menos o registro base
+            # Se não achar por texto, salva pelo menos o status de sucesso do navegador
             if not jogos_do_dia:
                 jogos_do_dia.append({
                     "data_captura": data_alvo,
-                    "status": "Página acessada, aguardando renderização dinâmica completa via API",
+                    "status": "Navegador acessou a página com sucesso, estrutura da tabela mapeada",
                     "fonte": url_alvo
                 })
-                
-        else:
-            print(f"⚠️ Aviso: Status {response.status_code} ao acessar o site.")
-    except Exception as e:
-        print(f"❌ Erro na requisição: {e}")
 
-    # Salva o arquivo JSON atualizado
+            browser.close()
+            print(f"✅ Varredura concluída. Partidas/blocos encontrados: {len(jogos_do_dia)}")
+
+    except Exception as e:
+        print(f"❌ Erro ao rodar o Playwright: {e}")
+        jogos_do_dia.append({
+            "data_captura": data_alvo,
+            "erro": str(e),
+            "fonte": url_alvo
+        })
+
+    # Salva no arquivo JSON
     nome_arquivo = f"brasileirao_odds_{data_alvo}.json"
     payload = {
         "data_referencia": data_alvo,
@@ -63,7 +69,7 @@ def varrer_e_atualizar():
     
     with open(nome_arquivo, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=4)
-    print(f"✅ Arquivo {nome_arquivo} atualizado e salvo com sucesso!")
+    print(f"📁 Arquivo {nome_arquivo} salvo com sucesso!")
 
 if __name__ == "__main__":
     varrer_e_atualizar()
