@@ -4,9 +4,8 @@ import requests
 
 def varrer_e_atualizar():
     data_alvo = datetime.now().strftime("%Y-%m-%d")
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔄 Buscando dados direto da API oficial do site...")
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔄 Baixando dados da API...")
     
-    # URL da API de eventos por data (exemplo para hoje)
     url_api = f"https://sports.bzzoiro.com/api/v2/events/?date_from={data_alvo}&date_to={data_alvo}"
     
     headers = {
@@ -14,41 +13,30 @@ def varrer_e_atualizar():
         "Accept": "application/json"
     }
 
-    jogos_do_dia = []
+    payload_final = {}
 
     try:
         response = requests.get(url_api, headers=headers, timeout=15)
+        print(f"📡 Status Code da API: {response.status_code}")
+        
         if response.status_code == 200:
-            dados = response.json()
-            
-            # Aqui você varre a lista de eventos que a API devolve
-            # (Ajuste a chave 'results' ou 'data' conforme a estrutura exata do JSON que a API retornar)
-            eventos = dados.get("results", dados) if isinstance(dados, dict) else dados
-            
-            for evento in eventos:
-                jogos_do_dia.append({
-                    "data_captura": data_alvo,
-                    "confronto": evento, # ou os campos específicos como time da casa e visitante
-                    "fonte": url_api
-                })
-            print(f"✅ Sucesso! Total de registros obtidos: {len(jogos_do_dia)}")
+            # Salva o conteúdo bruto retornado pela API para inspecionarmos
+            payload_final = response.json()
+            print("✅ Dados obtidos com sucesso da API!")
         else:
-            print(f"⚠️ Erro na API: Status {response.status_code}")
+            payload_final = {"erro": f"Status code {response.status_code}", "conteudo": response.text}
+            
     except Exception as e:
         print(f"❌ Erro na requisição: {e}")
+        payload_final = {"erro_excecao": str(e)}
 
-    # Salva o JSON final
+    # Salva exatamente o que a API respondeu no arquivo JSON
     nome_arquivo = f"brasileirao_odds_{data_alvo}.json"
-    payload = {
-        "data_referencia": data_alvo,
-        "total_registros": len(jogos_do_dia),
-        "partidas": jogos_do_dia,
-        "atualizado_em": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    }
     
     with open(nome_arquivo, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=4)
-    print(f"📁 Arquivo {nome_arquivo} atualizado com sucesso!")
+        json.dump(payload_final, f, ensure_ascii=False, indent=4)
+        
+    print(f"📁 Arquivo {nome_arquivo} atualizado com o conteúdo bruto!")
 
 if __name__ == "__main__":
     varrer_e_atualizar()
