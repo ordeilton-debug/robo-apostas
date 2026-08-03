@@ -1,6 +1,4 @@
 {
-    "data_referencia": "2026-08-03",
-    "total_registros": 0,
-    "partidas": [],
-    "atualizado_em": "2026-08-03 11:52:59"
+    "erro": "Status code 401",
+    "conteudo": "{\"error\":true,\"status\":401,\"detail\":\"Authentication credentials were not provided.\"}"
 }
