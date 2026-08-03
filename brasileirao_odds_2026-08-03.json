@@ -1,0 +1,13 @@
+{
+    "data_referencia": "2026-08-03",
+    "total_registros": 1,
+    "partidas": [
+        {
+            "data_captura": "2026-08-03",
+            "campeonato": "Campeonato Brasileiro",
+            "fonte": "https://oddsscanner.com/br/futebol/campeonato-brasileiro",
+            "status": "Varredura da página principal realizada com sucesso"
+        }
+    ],
+    "atualizado_em": "2026-08-03 00:52:02"
+}
