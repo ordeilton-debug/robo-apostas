@@ -7,6 +7,7 @@ def varrer_e_atualizar():
     data_alvo = datetime.now().strftime("%Y-%m-%d")
     print(f"[{datetime.now().strftime('%H:%M:%S')}] 🔄 GitHub Action rodando: Varrendo odds para {data_alvo}...")
     
+    # Substitua abaixo pela URL real do site que você deseja varrer
     url_alvo = f"https://exemplo-site-esportes.com/jogos?data={data_alvo}"
     
     headers = {
@@ -44,23 +45,23 @@ def varrer_e_atualizar():
                     }
                 }
                 jogos_do_dia.append(partida_obj)
-            
-            nome_arquivo = f"jogos_{data_alvo}.json"
-            payload = {
-                "data_referencia": data_alvo,
-                "total_jogos": len(jogos_do_dia),
-                "partidas": jogos_do_dia,
-                "atualizado_em": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            }
-            
-            with open(nome_arquivo, "w", encoding="utf-8") as f:
-                json.dump(payload, f, ensure_ascii=False, indent=4)
-            print(f"✅ Arquivo {nome_arquivo} atualizado com sucesso!")
-            
         else:
-            print(f"⚠️ Erro ao acessar o site: Status {response.status_code}")
+            print(f"⚠️ Aviso: Status {response.status_code} ao acessar o site. Gerando JSON base...")
     except Exception as e:
-        print(f"❌ Erro na varredura: {e}")
+        print(f"❌ Erro na requisição: {e}. Gerando JSON base...")
+
+    # Garante que o arquivo JSON sempre será criado/atualizado para evitar o erro do Git
+    nome_arquivo = f"jogos_{data_alvo}.json"
+    payload = {
+        "data_referencia": data_alvo,
+        "total_jogos": len(jogos_do_dia),
+        "partidas": jogos_do_dia,
+        "atualizado_em": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+    
+    with open(nome_arquivo, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=4)
+    print(f"✅ Arquivo {nome_arquivo} salvo com sucesso!")
 
 if __name__ == "__main__":
     varrer_e_atualizar()
