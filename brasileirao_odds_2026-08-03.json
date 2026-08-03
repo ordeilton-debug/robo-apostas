@@ -4,10 +4,9 @@
     "partidas": [
         {
             "data_captura": "2026-08-03",
-            "campeonato": "Campeonato Brasileiro",
-            "fonte": "https://oddsscanner.com/br/futebol/campeonato-brasileiro",
-            "status": "Varredura da página principal realizada com sucesso"
+            "status": "Página acessada, aguardando renderização dinâmica completa via API",
+            "fonte": "https://oddsscanner.com/br/futebol/campeonato-brasileiro"
         }
     ],
-    "atualizado_em": "2026-08-03 00:52:02"
+    "atualizado_em": "2026-08-03 00:55:35"
 }
