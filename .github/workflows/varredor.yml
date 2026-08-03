@@ -1,0 +1,33 @@
+name: Robô Varredor de Odds
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  varrer-e-salvar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar o Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependências
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Executar o robô varredor
+        run: python varredor.py
+
+      - name: Commit e Push do JSON atualizado para o GitHub
+        run: |
+          git config --global user.name "Robô de Odds"
+          git config --global user.email "robo@github.com"
+          git add *.json
+          git commit -m "🤖 Atualização automática de odds e mercados [skip ci]" || exit 0
+          git push
