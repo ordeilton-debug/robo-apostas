@@ -1,5 +1,5 @@
 {
-    "count": 204,
+    "count": 213,
     "next": "https://sports.bzzoiro.com/api/v2/events/?date_from=2026-08-08&date_to=2026-08-08&limit=50&offset=50",
     "previous": null,
     "results": [
@@ -161,7 +161,7 @@
             "away_team": "Internacional de Bogotá",
             "home_coach_id": 1966,
             "away_coach_id": 2849,
-            "referee_id": null,
+            "referee_id": 2734,
             "venue_id": 580,
             "event_date": "2026-08-08T23:25:00+00:00",
             "status": "notstarted",
@@ -1015,7 +1015,7 @@
             "away_team": "Cúcuta Deportivo",
             "home_coach_id": 783,
             "away_coach_id": 2685,
-            "referee_id": null,
+            "referee_id": 2100,
             "venue_id": 1653,
             "event_date": "2026-08-08T21:20:00+00:00",
             "status": "notstarted",
@@ -1821,7 +1821,7 @@
             "away_team": "Boyacá Chicó FC",
             "home_coach_id": 541,
             "away_coach_id": 2850,
-            "referee_id": null,
+            "referee_id": 2728,
             "venue_id": 542,
             "event_date": "2026-08-08T19:00:00+00:00",
             "status": "notstarted",
@@ -3204,6 +3204,210 @@
             "previous_leg_event_id": null
         },
         {
+            "id": 580788,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 4968,
+            "home_team": "Forlì",
+            "away_team_id": 1275,
+            "away_team": "Cesena",
+            "home_coach_id": 3132,
+            "away_coach_id": 2022,
+            "referee_id": null,
+            "venue_id": null,
+            "event_date": "2026-08-08T18:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 580787,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 42,
+            "home_team": "Real Oviedo",
+            "away_team_id": 102,
+            "away_team": "Le Havre",
+            "home_coach_id": 2002,
+            "away_coach_id": 406,
+            "referee_id": null,
+            "venue_id": 42,
+            "event_date": "2026-08-08T18:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 580786,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 1391,
+            "home_team": "Gimnàstic de Tarragona",
+            "away_team_id": 39,
+            "away_team": "Girona FC",
+            "home_coach_id": null,
+            "away_coach_id": null,
+            "referee_id": null,
+            "venue_id": 844,
+            "event_date": "2026-08-08T18:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 12,
+                "home_wins": 4,
+                "draws": 3,
+                "away_wins": 3,
+                "home_goals": 16,
+                "away_goals": 13,
+                "avg_total_goals": 2.4166666666666665,
+                "home_win_rate": 0.3333333333333333,
+                "away_win_rate": 0.25,
+                "recent_matches": [
+                    {
+                        "away": "Girona FC",
+                        "date": "2017-05-28T16:00:00+00:00",
+                        "home": "Gimnàstic de Tarragona",
+                        "score": "3-1"
+                    },
+                    {
+                        "away": "Gimnàstic de Tarragona",
+                        "date": "2016-12-17T19:00:00+00:00",
+                        "home": "Girona FC",
+                        "score": "4-2"
+                    },
+                    {
+                        "away": "Gimnàstic de Tarragona",
+                        "date": "2016-02-07T16:00:00+00:00",
+                        "home": "Girona FC",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Girona FC",
+                        "date": "2015-09-05T16:00:00+00:00",
+                        "home": "Gimnàstic de Tarragona",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Girona FC",
+                        "date": "2012-05-16T18:00:00+00:00",
+                        "home": "Gimnàstic de Tarragona",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Gimnàstic de Tarragona",
+                        "date": "2011-12-17T17:00:00+00:00",
+                        "home": "Girona FC",
+                        "score": "3-2"
+                    },
+                    {
+                        "away": "Gimnàstic de Tarragona",
+                        "date": "2011-02-05T17:00:00+00:00",
+                        "home": "Girona FC",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Girona FC",
+                        "date": "2010-09-04T16:00:00+00:00",
+                        "home": "Gimnàstic de Tarragona",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Gimnàstic de Tarragona",
+                        "date": "2010-02-06T17:00:00+00:00",
+                        "home": "Girona FC",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Girona FC",
+                        "date": "2009-09-05T16:00:00+00:00",
+                        "home": "Gimnàstic de Tarragona",
+                        "score": "1-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
             "id": 580459,
             "league_id": 79,
             "season_id": 1552,
@@ -3652,282 +3856,6 @@
             "websocket_plus": false,
             "highlights": [],
             "head_to_head": null,
-            "has_xg": false,
-            "previous_leg_event_id": null
-        },
-        {
-            "id": 215471,
-            "league_id": 42,
-            "season_id": 1155,
-            "home_team_id": 3889,
-            "home_team": "Ascoli",
-            "away_team_id": 3890,
-            "away_team": "Potenza Calcio",
-            "home_coach_id": 2012,
-            "away_coach_id": 2013,
-            "referee_id": null,
-            "venue_id": null,
-            "event_date": "2026-08-08T18:30:00+00:00",
-            "status": "notstarted",
-            "replaced_by": null,
-            "round_number": 300,
-            "round_name": "Preliminary",
-            "group_name": null,
-            "period": "",
-            "current_minute": null,
-            "home_score": null,
-            "away_score": null,
-            "home_score_ht": null,
-            "away_score_ht": null,
-            "penalty_shootout": null,
-            "extra_time_score": null,
-            "is_local_derby": false,
-            "is_neutral_ground": false,
-            "travel_distance_km": null,
-            "weather": {
-                "code": null,
-                "description": null,
-                "wind_speed": null,
-                "temperature_c": null
-            },
-            "pitch_condition": null,
-            "attendance": null,
-            "live_websocket": true,
-            "websocket_plus": false,
-            "highlights": [],
-            "head_to_head": null,
-            "has_xg": false,
-            "previous_leg_event_id": null
-        },
-        {
-            "id": 214552,
-            "league_id": 23,
-            "season_id": 1396,
-            "home_team_id": 368,
-            "home_team": "FC Dinamo București",
-            "away_team_id": 2217,
-            "away_team": "FC Voluntari",
-            "home_coach_id": 999,
-            "away_coach_id": 1594,
-            "referee_id": null,
-            "venue_id": 138,
-            "event_date": "2026-08-08T18:30:00+00:00",
-            "status": "notstarted",
-            "replaced_by": null,
-            "round_number": 4,
-            "round_name": "",
-            "group_name": null,
-            "period": "",
-            "current_minute": null,
-            "home_score": null,
-            "away_score": null,
-            "home_score_ht": null,
-            "away_score_ht": null,
-            "penalty_shootout": null,
-            "extra_time_score": null,
-            "is_local_derby": true,
-            "is_neutral_ground": false,
-            "travel_distance_km": 6,
-            "weather": {
-                "code": 0,
-                "description": "unknown",
-                "wind_speed": 18.0,
-                "temperature_c": 34
-            },
-            "pitch_condition": null,
-            "attendance": null,
-            "live_websocket": true,
-            "websocket_plus": true,
-            "highlights": [],
-            "head_to_head": {
-                "total_matches": 24,
-                "home_wins": 6,
-                "draws": 2,
-                "away_wins": 2,
-                "home_goals": 17,
-                "away_goals": 10,
-                "avg_total_goals": 1.125,
-                "home_win_rate": 0.25,
-                "away_win_rate": 0.08333333333333333,
-                "recent_matches": [
-                    {
-                        "away": "FC Voluntari",
-                        "date": "2024-04-26T17:00:00+00:00",
-                        "home": "FC Dinamo București",
-                        "score": "1-1"
-                    },
-                    {
-                        "away": "FC Voluntari",
-                        "date": "2023-12-22T18:30:00+00:00",
-                        "home": "FC Dinamo București",
-                        "score": "1-0"
-                    },
-                    {
-                        "away": "FC Dinamo București",
-                        "date": "2023-08-19T18:45:00+00:00",
-                        "home": "FC Voluntari",
-                        "score": "2-3"
-                    },
-                    {
-                        "away": "FC Dinamo București",
-                        "date": "2021-11-22T18:30:00+00:00",
-                        "home": "FC Voluntari",
-                        "score": "2-1"
-                    },
-                    {
-                        "away": "FC Voluntari",
-                        "date": "2021-07-19T17:30:00+00:00",
-                        "home": "FC Dinamo București",
-                        "score": "3-2"
-                    },
-                    {
-                        "away": "FC Voluntari",
-                        "date": "2021-04-29T14:00:00+00:00",
-                        "home": "FC Dinamo București",
-                        "score": "2-0"
-                    },
-                    {
-                        "away": "FC Dinamo București",
-                        "date": "2021-03-08T18:30:00+00:00",
-                        "home": "FC Voluntari",
-                        "score": "1-1"
-                    },
-                    {
-                        "away": "FC Voluntari",
-                        "date": "2020-11-20T18:30:00+00:00",
-                        "home": "FC Dinamo București",
-                        "score": "3-0"
-                    },
-                    {
-                        "away": "FC Dinamo București",
-                        "date": "2020-08-02T18:30:00+00:00",
-                        "home": "FC Voluntari",
-                        "score": "1-2"
-                    },
-                    {
-                        "away": "FC Voluntari",
-                        "date": "2020-06-28T14:00:00+00:00",
-                        "home": "FC Dinamo București",
-                        "score": "0-1"
-                    }
-                ]
-            },
-            "has_xg": false,
-            "previous_leg_event_id": null
-        },
-        {
-            "id": 211380,
-            "league_id": 15,
-            "season_id": 1395,
-            "home_team_id": 251,
-            "home_team": "Servette FC",
-            "away_team_id": 249,
-            "away_team": "Grasshopper Club Zürich",
-            "home_coach_id": 466,
-            "away_coach_id": 275,
-            "referee_id": 2264,
-            "venue_id": 241,
-            "event_date": "2026-08-08T18:30:00+00:00",
-            "status": "notstarted",
-            "replaced_by": null,
-            "round_number": 3,
-            "round_name": "",
-            "group_name": null,
-            "period": "",
-            "current_minute": null,
-            "home_score": null,
-            "away_score": null,
-            "home_score_ht": null,
-            "away_score_ht": null,
-            "penalty_shootout": null,
-            "extra_time_score": null,
-            "is_local_derby": false,
-            "is_neutral_ground": false,
-            "travel_distance_km": 226,
-            "weather": {
-                "code": 3,
-                "description": "rain",
-                "wind_speed": 6.2,
-                "temperature_c": 23
-            },
-            "pitch_condition": null,
-            "attendance": null,
-            "live_websocket": true,
-            "websocket_plus": true,
-            "highlights": [],
-            "head_to_head": {
-                "total_matches": 26,
-                "home_wins": 7,
-                "draws": 3,
-                "away_wins": 0,
-                "home_goals": 20,
-                "away_goals": 6,
-                "avg_total_goals": 1.0,
-                "home_win_rate": 0.2692307692307692,
-                "away_win_rate": 0.0,
-                "recent_matches": [
-                    {
-                        "away": "Servette FC",
-                        "date": "2026-05-03T14:30:00+00:00",
-                        "home": "Grasshopper Club Zürich",
-                        "score": "0-2"
-                    },
-                    {
-                        "away": "Grasshopper Club Zürich",
-                        "date": "2026-03-21T17:00:00+00:00",
-                        "home": "Servette FC",
-                        "score": "5-0"
-                    },
-                    {
-                        "away": "Servette FC",
-                        "date": "2025-12-06T17:00:00+00:00",
-                        "home": "Grasshopper Club Zürich",
-                        "score": "0-1"
-                    },
-                    {
-                        "away": "Grasshopper Club Zürich",
-                        "date": "2025-08-10T14:30:00+00:00",
-                        "home": "Servette FC",
-                        "score": "1-1"
-                    },
-                    {
-                        "away": "Servette FC",
-                        "date": "2025-02-16T15:30:00+00:00",
-                        "home": "Grasshopper Club Zürich",
-                        "score": "1-2"
-                    },
-                    {
-                        "away": "Grasshopper Club Zürich",
-                        "date": "2025-02-01T19:30:00+00:00",
-                        "home": "Servette FC",
-                        "score": "1-1"
-                    },
-                    {
-                        "away": "Servette FC",
-                        "date": "2024-09-21T16:00:00+00:00",
-                        "home": "Grasshopper Club Zürich",
-                        "score": "2-2"
-                    },
-                    {
-                        "away": "Grasshopper Club Zürich",
-                        "date": "2024-04-20T16:00:00+00:00",
-                        "home": "Servette FC",
-                        "score": "1-0"
-                    },
-                    {
-                        "away": "Grasshopper Club Zürich",
-                        "date": "2023-11-26T15:30:00+00:00",
-                        "home": "Servette FC",
-                        "score": "2-0"
-                    },
-                    {
-                        "away": "Servette FC",
-                        "date": "2023-07-22T16:00:00+00:00",
-                        "home": "Grasshopper Club Zürich",
-                        "score": "1-3"
-                    }
-                ]
-            },
             "has_xg": false,
             "previous_leg_event_id": null
         }
