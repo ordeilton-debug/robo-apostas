@@ -1,0 +1,4217 @@
+{
+    "count": 103,
+    "next": "https://sports.bzzoiro.com/api/v2/events/?date_from=2026-08-09&date_to=2026-08-09&limit=50&offset=50",
+    "previous": null,
+    "results": [
+        {
+            "id": 223535,
+            "league_id": 85,
+            "season_id": 1635,
+            "home_team_id": 806,
+            "home_team": "Argentinos Juniors",
+            "away_team_id": 733,
+            "away_team": "Racing Club",
+            "home_coach_id": 727,
+            "away_coach_id": 2661,
+            "referee_id": 2804,
+            "venue_id": 1760,
+            "event_date": "2026-08-09T23:15:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 4,
+            "round_name": "",
+            "group_name": "Group B",
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 12,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 8.5,
+                "temperature_c": 9
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 24,
+                "home_wins": 5,
+                "draws": 1,
+                "away_wins": 4,
+                "home_goals": 14,
+                "away_goals": 12,
+                "avg_total_goals": 1.0833333333333333,
+                "home_win_rate": 0.20833333333333334,
+                "away_win_rate": 0.16666666666666666,
+                "recent_matches": [
+                    {
+                        "away": "Argentinos Juniors",
+                        "date": "2026-02-07T21:00:00+00:00",
+                        "home": "Racing Club",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Racing Club",
+                        "date": "2025-08-24T19:15:00+00:00",
+                        "home": "Argentinos Juniors",
+                        "score": "4-1"
+                    },
+                    {
+                        "away": "Argentinos Juniors",
+                        "date": "2025-02-16T00:30:00+00:00",
+                        "home": "Racing Club",
+                        "score": "2-3"
+                    },
+                    {
+                        "away": "Argentinos Juniors",
+                        "date": "2024-05-21T00:15:00+00:00",
+                        "home": "Racing Club",
+                        "score": "3-0"
+                    },
+                    {
+                        "away": "Racing Club",
+                        "date": "2023-02-05T00:30:00+00:00",
+                        "home": "Argentinos Juniors",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Argentinos Juniors",
+                        "date": "2022-09-03T21:00:00+00:00",
+                        "home": "Racing Club",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Racing Club",
+                        "date": "2021-09-27T21:00:00+00:00",
+                        "home": "Argentinos Juniors",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Racing Club",
+                        "date": "2020-02-02T00:45:00+00:00",
+                        "home": "Argentinos Juniors",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Racing Club",
+                        "date": "2018-09-29T23:00:00+00:00",
+                        "home": "Argentinos Juniors",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Racing Club",
+                        "date": "2017-09-30T23:05:00+00:00",
+                        "home": "Argentinos Juniors",
+                        "score": "2-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 220018,
+            "league_id": 80,
+            "season_id": 1570,
+            "home_team_id": 4785,
+            "home_team": "Jaguares de Córdoba",
+            "away_team_id": 3891,
+            "away_team": "Once Caldas",
+            "home_coach_id": 2852,
+            "away_coach_id": 2692,
+            "referee_id": 2727,
+            "venue_id": 1655,
+            "event_date": "2026-08-09T23:10:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 4,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 415,
+            "weather": {
+                "code": 1,
+                "description": "clear",
+                "wind_speed": 10.6,
+                "temperature_c": 31
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 11,
+                "home_wins": 5,
+                "draws": 2,
+                "away_wins": 3,
+                "home_goals": 11,
+                "away_goals": 11,
+                "avg_total_goals": 2.0,
+                "home_win_rate": 0.45454545454545453,
+                "away_win_rate": 0.2727272727272727,
+                "recent_matches": [
+                    {
+                        "away": "Jaguares de Córdoba",
+                        "date": "2026-02-01T23:10:00+00:00",
+                        "home": "Once Caldas",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Once Caldas",
+                        "date": "2024-02-18T23:10:00+00:00",
+                        "home": "Jaguares de Córdoba",
+                        "score": "3-0"
+                    },
+                    {
+                        "away": "Once Caldas",
+                        "date": "2023-05-01T22:15:00+00:00",
+                        "home": "Jaguares de Córdoba",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Once Caldas",
+                        "date": "2022-04-11T22:30:00+00:00",
+                        "home": "Jaguares de Córdoba",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Jaguares de Córdoba",
+                        "date": "2021-04-06T01:00:00+00:00",
+                        "home": "Once Caldas",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Jaguares de Córdoba",
+                        "date": "2020-10-24T21:00:00+00:00",
+                        "home": "Once Caldas",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Jaguares de Córdoba",
+                        "date": "2019-04-13T21:00:00+00:00",
+                        "home": "Once Caldas",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Jaguares de Córdoba",
+                        "date": "2018-02-03T23:00:00+00:00",
+                        "home": "Once Caldas",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Jaguares de Córdoba",
+                        "date": "2017-04-07T23:00:00+00:00",
+                        "home": "Once Caldas",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Jaguares de Córdoba",
+                        "date": "2016-02-13T23:00:00+00:00",
+                        "home": "Once Caldas",
+                        "score": "4-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 216404,
+            "league_id": 72,
+            "season_id": 1540,
+            "home_team_id": 3941,
+            "home_team": "Chicago Stars FC",
+            "away_team_id": 3932,
+            "away_team": "Bay FC",
+            "home_coach_id": 2064,
+            "away_coach_id": 2055,
+            "referee_id": null,
+            "venue_id": 1609,
+            "event_date": "2026-08-09T23:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 18.0,
+                "temperature_c": 36
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 5,
+                "home_wins": 3,
+                "draws": 1,
+                "away_wins": 1,
+                "home_goals": 7,
+                "away_goals": 5,
+                "avg_total_goals": 2.4,
+                "home_win_rate": 0.6,
+                "away_win_rate": 0.2,
+                "recent_matches": [
+                    {
+                        "away": "Chicago Stars FC",
+                        "date": "2026-05-24T21:00:00+00:00",
+                        "home": "Bay FC",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Bay FC",
+                        "date": "2025-08-10T18:00:00+00:00",
+                        "home": "Chicago Stars FC",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Chicago Stars FC",
+                        "date": "2025-04-13T23:00:00+00:00",
+                        "home": "Bay FC",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Bay FC",
+                        "date": "2024-06-08T23:30:00+00:00",
+                        "home": "Chicago Stars FC",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Chicago Stars FC",
+                        "date": "2024-05-06T00:00:00+00:00",
+                        "home": "Bay FC",
+                        "score": "1-2"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 7208,
+            "league_id": 9,
+            "season_id": 28,
+            "home_team_id": 160,
+            "home_team": "Flamengo",
+            "away_team_id": 157,
+            "away_team": "Vitória",
+            "home_coach_id": 165,
+            "away_coach_id": 144,
+            "referee_id": 1932,
+            "venue_id": 151,
+            "event_date": "2026-08-09T22:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 22,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 1224,
+            "weather": {
+                "code": 51,
+                "description": null,
+                "wind_speed": 14.3,
+                "temperature_c": 23
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 2,
+                "home_wins": 1,
+                "draws": 0,
+                "away_wins": 1,
+                "home_goals": 2,
+                "away_goals": 3,
+                "avg_total_goals": 2.5,
+                "home_win_rate": 0.5,
+                "away_win_rate": 0.5,
+                "recent_matches": [
+                    {
+                        "away": "Flamengo",
+                        "date": "2026-05-15T00:30:00+00:00",
+                        "home": "Vitória",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Vitória",
+                        "date": "2026-04-23T00:30:00+00:00",
+                        "home": "Flamengo",
+                        "score": "2-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 7213,
+            "league_id": 9,
+            "season_id": 28,
+            "home_team_id": 165,
+            "home_team": "Santos",
+            "away_team_id": 371,
+            "away_team": "Athletico",
+            "home_coach_id": 156,
+            "away_coach_id": 43,
+            "referee_id": 1590,
+            "venue_id": 162,
+            "event_date": "2026-08-09T21:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 22,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": 53,
+                "description": null,
+                "wind_speed": 27.7,
+                "temperature_c": 18
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 2,
+                "home_wins": 2,
+                "draws": 0,
+                "away_wins": 0,
+                "home_goals": 4,
+                "away_goals": 2,
+                "avg_total_goals": 3.0,
+                "home_win_rate": 1.0,
+                "away_win_rate": 0.0,
+                "recent_matches": [
+                    {
+                        "away": "Athletico",
+                        "date": "2017-08-11T00:45:00+00:00",
+                        "home": "Santos",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Santos",
+                        "date": "2017-07-05T22:15:00+00:00",
+                        "home": "Athletico",
+                        "score": "2-3"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 7211,
+            "league_id": 9,
+            "season_id": 28,
+            "home_team_id": 168,
+            "home_team": "Red Bull Bragantino",
+            "away_team_id": 167,
+            "away_team": "Corinthians",
+            "home_coach_id": 164,
+            "away_coach_id": 153,
+            "referee_id": 1616,
+            "venue_id": 1156,
+            "event_date": "2026-08-09T21:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 22,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 63,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 2,
+                "home_wins": 1,
+                "draws": 0,
+                "away_wins": 1,
+                "home_goals": 3,
+                "away_goals": 3,
+                "avg_total_goals": 3.0,
+                "home_win_rate": 0.5,
+                "away_win_rate": 0.5,
+                "recent_matches": [
+                    {
+                        "away": "Red Bull Bragantino",
+                        "date": "2024-08-21T00:30:00+00:00",
+                        "home": "Corinthians",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Corinthians",
+                        "date": "2024-08-14T00:30:00+00:00",
+                        "home": "Red Bull Bragantino",
+                        "score": "1-2"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 220020,
+            "league_id": 80,
+            "season_id": 1570,
+            "home_team_id": 4783,
+            "home_team": "Alianza Valledupar FC",
+            "away_team_id": 771,
+            "away_team": "Atlético Bucaramanga",
+            "home_coach_id": 3103,
+            "away_coach_id": 2690,
+            "referee_id": 2826,
+            "venue_id": 1662,
+            "event_date": "2026-08-09T21:05:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 4,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": 3,
+                "description": "rain",
+                "wind_speed": 9.1,
+                "temperature_c": 31
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 1,
+                "home_wins": 1,
+                "draws": 0,
+                "away_wins": 0,
+                "home_goals": 2,
+                "away_goals": 1,
+                "avg_total_goals": 3.0,
+                "home_win_rate": 1.0,
+                "away_win_rate": 0.0,
+                "recent_matches": [
+                    {
+                        "away": "Alianza Valledupar FC",
+                        "date": "2026-05-24T20:30:00+00:00",
+                        "home": "Atlético Bucaramanga",
+                        "score": "1-2"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 207748,
+            "league_id": 57,
+            "season_id": 1435,
+            "home_team_id": 2242,
+            "home_team": "Indy Eleven",
+            "away_team_id": 2228,
+            "away_team": "Hartford Athletic",
+            "home_coach_id": 1637,
+            "away_coach_id": 1623,
+            "referee_id": null,
+            "venue_id": 1341,
+            "event_date": "2026-08-09T21:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 1160,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 12.5,
+                "temperature_c": 38
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 12,
+                "home_wins": 5,
+                "draws": 4,
+                "away_wins": 1,
+                "home_goals": 21,
+                "away_goals": 11,
+                "avg_total_goals": 2.6666666666666665,
+                "home_win_rate": 0.4166666666666667,
+                "away_win_rate": 0.08333333333333333,
+                "recent_matches": [
+                    {
+                        "away": "Indy Eleven",
+                        "date": "2026-03-28T21:00:00+00:00",
+                        "home": "Hartford Athletic",
+                        "score": "2-2"
+                    },
+                    {
+                        "away": "Indy Eleven",
+                        "date": "2025-09-03T23:30:00+00:00",
+                        "home": "Hartford Athletic",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Hartford Athletic",
+                        "date": "2025-05-28T23:00:00+00:00",
+                        "home": "Indy Eleven",
+                        "score": "4-4"
+                    },
+                    {
+                        "away": "Indy Eleven",
+                        "date": "2024-09-07T23:00:00+00:00",
+                        "home": "Hartford Athletic",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Hartford Athletic",
+                        "date": "2024-05-18T23:00:00+00:00",
+                        "home": "Indy Eleven",
+                        "score": "4-1"
+                    },
+                    {
+                        "away": "Indy Eleven",
+                        "date": "2023-06-24T23:00:00+00:00",
+                        "home": "Hartford Athletic",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Hartford Athletic",
+                        "date": "2023-06-10T23:00:00+00:00",
+                        "home": "Indy Eleven",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Indy Eleven",
+                        "date": "2022-08-13T23:00:00+00:00",
+                        "home": "Hartford Athletic",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Hartford Athletic",
+                        "date": "2022-04-30T23:00:00+00:00",
+                        "home": "Indy Eleven",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Hartford Athletic",
+                        "date": "2020-07-29T23:00:00+00:00",
+                        "home": "Indy Eleven",
+                        "score": "4-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 10058,
+            "league_id": 34,
+            "season_id": 52,
+            "home_team_id": 863,
+            "home_team": "Cuiabá",
+            "away_team_id": 152,
+            "away_team": "Fortaleza",
+            "home_coach_id": 121,
+            "away_coach_id": 3088,
+            "referee_id": 1833,
+            "venue_id": 627,
+            "event_date": "2026-08-09T21:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 21,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 2334,
+            "weather": {
+                "code": 51,
+                "description": null,
+                "wind_speed": 14.7,
+                "temperature_c": 20
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 1,
+                "home_wins": 0,
+                "draws": 1,
+                "away_wins": 0,
+                "home_goals": 0,
+                "away_goals": 0,
+                "avg_total_goals": 0.0,
+                "home_win_rate": 0.0,
+                "away_win_rate": 0.0,
+                "recent_matches": [
+                    {
+                        "away": "Cuiabá",
+                        "date": "2026-03-31T22:00:00+00:00",
+                        "home": "Fortaleza",
+                        "score": "0-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 223544,
+            "league_id": 85,
+            "season_id": 1635,
+            "home_team_id": 4998,
+            "home_team": "Gimnasia y Esgrima",
+            "away_team_id": 734,
+            "away_team": "Barracas Central",
+            "home_coach_id": 3201,
+            "away_coach_id": 3194,
+            "referee_id": 2817,
+            "venue_id": 1761,
+            "event_date": "2026-08-09T20:45:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 4,
+            "round_name": "",
+            "group_name": "Group B",
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 52,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 14.2,
+                "temperature_c": 12
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 5,
+                "home_wins": 2,
+                "draws": 1,
+                "away_wins": 2,
+                "home_goals": 5,
+                "away_goals": 5,
+                "avg_total_goals": 2.0,
+                "home_win_rate": 0.4,
+                "away_win_rate": 0.4,
+                "recent_matches": [
+                    {
+                        "away": "Gimnasia y Esgrima",
+                        "date": "2026-02-09T20:00:00+00:00",
+                        "home": "Barracas Central",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Gimnasia y Esgrima",
+                        "date": "2025-12-01T20:00:00+00:00",
+                        "home": "Barracas Central",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Barracas Central",
+                        "date": "2024-06-13T00:15:00+00:00",
+                        "home": "Gimnasia y Esgrima",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Gimnasia y Esgrima",
+                        "date": "2023-02-27T20:00:00+00:00",
+                        "home": "Barracas Central",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Gimnasia y Esgrima",
+                        "date": "2022-09-29T18:30:00+00:00",
+                        "home": "Barracas Central",
+                        "score": "1-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 223542,
+            "league_id": 85,
+            "season_id": 1635,
+            "home_team_id": 3136,
+            "home_team": "Defensa y Justicia",
+            "away_team_id": 4997,
+            "away_team": "Newell's Old Boys",
+            "home_coach_id": 2845,
+            "away_coach_id": 3192,
+            "referee_id": 2812,
+            "venue_id": 1764,
+            "event_date": "2026-08-09T20:45:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 4,
+            "round_name": "",
+            "group_name": "Group A",
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 302,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 13.1,
+                "temperature_c": 12
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 14,
+                "home_wins": 5,
+                "draws": 2,
+                "away_wins": 3,
+                "home_goals": 10,
+                "away_goals": 8,
+                "avg_total_goals": 1.2857142857142858,
+                "home_win_rate": 0.35714285714285715,
+                "away_win_rate": 0.21428571428571427,
+                "recent_matches": [
+                    {
+                        "away": "Defensa y Justicia",
+                        "date": "2026-02-08T01:15:00+00:00",
+                        "home": "Newell's Old Boys",
+                        "score": "2-3"
+                    },
+                    {
+                        "away": "Newell's Old Boys",
+                        "date": "2025-08-17T17:00:00+00:00",
+                        "home": "Defensa y Justicia",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Defensa y Justicia",
+                        "date": "2025-02-12T20:45:00+00:00",
+                        "home": "Newell's Old Boys",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Defensa y Justicia",
+                        "date": "2024-05-25T20:30:00+00:00",
+                        "home": "Newell's Old Boys",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Newell's Old Boys",
+                        "date": "2023-02-11T20:00:00+00:00",
+                        "home": "Defensa y Justicia",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Defensa y Justicia",
+                        "date": "2022-07-25T22:00:00+00:00",
+                        "home": "Newell's Old Boys",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Newell's Old Boys",
+                        "date": "2021-08-25T19:30:00+00:00",
+                        "home": "Defensa y Justicia",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Defensa y Justicia",
+                        "date": "2019-11-10T18:30:00+00:00",
+                        "home": "Newell's Old Boys",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Defensa y Justicia",
+                        "date": "2018-11-12T22:15:00+00:00",
+                        "home": "Newell's Old Boys",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Defensa y Justicia",
+                        "date": "2018-05-05T18:30:00+00:00",
+                        "home": "Newell's Old Boys",
+                        "score": "1-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 216403,
+            "league_id": 72,
+            "season_id": 1540,
+            "home_team_id": 3928,
+            "home_team": "Boston Legacy FC",
+            "away_team_id": 3927,
+            "away_team": "Portland Thorns FC",
+            "home_coach_id": 2051,
+            "away_coach_id": 2050,
+            "referee_id": null,
+            "venue_id": 1339,
+            "event_date": "2026-08-09T20:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": 1,
+                "description": "clear",
+                "wind_speed": 20.2,
+                "temperature_c": 40
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 215497,
+            "league_id": 2,
+            "season_id": 1310,
+            "home_team_id": 29,
+            "home_team": "Moreirense",
+            "away_team_id": 31,
+            "away_team": "Sporting Braga",
+            "home_coach_id": 9,
+            "away_coach_id": 11,
+            "referee_id": 2433,
+            "venue_id": 29,
+            "event_date": "2026-08-09T19:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": true,
+            "is_neutral_ground": false,
+            "travel_distance_km": 21,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 15.2,
+                "temperature_c": 33
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 26,
+                "home_wins": 0,
+                "draws": 0,
+                "away_wins": 10,
+                "home_goals": 8,
+                "away_goals": 23,
+                "avg_total_goals": 1.1923076923076923,
+                "home_win_rate": 0.0,
+                "away_win_rate": 0.38461538461538464,
+                "recent_matches": [
+                    {
+                        "away": "Sporting Braga",
+                        "date": "2026-04-04T17:00:00+00:00",
+                        "home": "Moreirense",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Moreirense",
+                        "date": "2025-11-09T20:30:00+00:00",
+                        "home": "Sporting Braga",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Sporting Braga",
+                        "date": "2025-02-03T18:45:00+00:00",
+                        "home": "Moreirense",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Moreirense",
+                        "date": "2024-08-25T19:30:00+00:00",
+                        "home": "Sporting Braga",
+                        "score": "3-1"
+                    },
+                    {
+                        "away": "Moreirense",
+                        "date": "2024-02-04T20:30:00+00:00",
+                        "home": "Sporting Braga",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Sporting Braga",
+                        "date": "2023-09-09T17:00:00+00:00",
+                        "home": "Moreirense",
+                        "score": "2-3"
+                    },
+                    {
+                        "away": "Moreirense",
+                        "date": "2022-01-30T18:00:00+00:00",
+                        "home": "Sporting Braga",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Sporting Braga",
+                        "date": "2021-08-20T20:15:00+00:00",
+                        "home": "Moreirense",
+                        "score": "2-3"
+                    },
+                    {
+                        "away": "Moreirense",
+                        "date": "2021-05-14T20:15:00+00:00",
+                        "home": "Sporting Braga",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Sporting Braga",
+                        "date": "2021-02-01T19:45:00+00:00",
+                        "home": "Moreirense",
+                        "score": "0-4"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 215496,
+            "league_id": 2,
+            "season_id": 1310,
+            "home_team_id": 24,
+            "home_team": "Gil Vicente",
+            "away_team_id": 38,
+            "away_team": "Rio Ave",
+            "home_coach_id": 1987,
+            "away_coach_id": 18,
+            "referee_id": 2177,
+            "venue_id": 24,
+            "event_date": "2026-08-09T19:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 20,
+                "home_wins": 2,
+                "draws": 6,
+                "away_wins": 2,
+                "home_goals": 12,
+                "away_goals": 12,
+                "avg_total_goals": 1.2,
+                "home_win_rate": 0.1,
+                "away_win_rate": 0.1,
+                "recent_matches": [
+                    {
+                        "away": "Gil Vicente",
+                        "date": "2026-05-03T19:30:00+00:00",
+                        "home": "Rio Ave",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Rio Ave",
+                        "date": "2025-12-20T18:00:00+00:00",
+                        "home": "Gil Vicente",
+                        "score": "2-2"
+                    },
+                    {
+                        "away": "Gil Vicente",
+                        "date": "2025-05-16T18:00:00+00:00",
+                        "home": "Rio Ave",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Rio Ave",
+                        "date": "2025-01-06T20:15:00+00:00",
+                        "home": "Gil Vicente",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Gil Vicente",
+                        "date": "2024-04-06T14:30:00+00:00",
+                        "home": "Rio Ave",
+                        "score": "3-0"
+                    },
+                    {
+                        "away": "Rio Ave",
+                        "date": "2023-11-12T15:30:00+00:00",
+                        "home": "Gil Vicente",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Gil Vicente",
+                        "date": "2023-03-12T15:30:00+00:00",
+                        "home": "Rio Ave",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Rio Ave",
+                        "date": "2022-09-17T14:30:00+00:00",
+                        "home": "Gil Vicente",
+                        "score": "2-2"
+                    },
+                    {
+                        "away": "Gil Vicente",
+                        "date": "2021-04-03T17:00:00+00:00",
+                        "home": "Rio Ave",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Rio Ave",
+                        "date": "2020-11-29T15:00:00+00:00",
+                        "home": "Gil Vicente",
+                        "score": "2-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 215491,
+            "league_id": 2,
+            "season_id": 1310,
+            "home_team_id": 37,
+            "home_team": "Benfica",
+            "away_team_id": 3402,
+            "away_team": "Académico Viseu FC",
+            "home_coach_id": 553,
+            "away_coach_id": 1988,
+            "referee_id": 2116,
+            "venue_id": 37,
+            "event_date": "2026-08-09T19:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 26.2,
+                "temperature_c": 25
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 580468,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 4703,
+            "home_team": "UE Olot",
+            "away_team_id": 1467,
+            "away_team": "CE Sabadell",
+            "home_coach_id": 2765,
+            "away_coach_id": 917,
+            "referee_id": null,
+            "venue_id": null,
+            "event_date": "2026-08-09T19:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 78,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 215469,
+            "league_id": 42,
+            "season_id": 1155,
+            "home_team_id": 1281,
+            "home_team": "Benevento",
+            "away_team_id": 3886,
+            "away_team": "Ravenna",
+            "home_coach_id": 2008,
+            "away_coach_id": 2009,
+            "referee_id": null,
+            "venue_id": 746,
+            "event_date": "2026-08-09T19:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 300,
+            "round_name": "Preliminary",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 10061,
+            "league_id": 34,
+            "season_id": 52,
+            "home_team_id": 928,
+            "home_team": "Náutico",
+            "away_team_id": 819,
+            "away_team": "Atlético Goianiense",
+            "home_coach_id": 137,
+            "away_coach_id": 841,
+            "referee_id": 1801,
+            "venue_id": 708,
+            "event_date": "2026-08-09T19:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 21,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 1823,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 15.6,
+                "temperature_c": 26
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 7,
+                "home_wins": 2,
+                "draws": 1,
+                "away_wins": 4,
+                "home_goals": 6,
+                "away_goals": 12,
+                "avg_total_goals": 2.5714285714285716,
+                "home_win_rate": 0.2857142857142857,
+                "away_win_rate": 0.5714285714285714,
+                "recent_matches": [
+                    {
+                        "away": "Náutico",
+                        "date": "2026-04-01T22:00:00+00:00",
+                        "home": "Atlético Goianiense",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Atlético Goianiense",
+                        "date": "2016-10-28T23:30:00+00:00",
+                        "home": "Náutico",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Náutico",
+                        "date": "2016-07-02T19:00:00+00:00",
+                        "home": "Atlético Goianiense",
+                        "score": "3-0"
+                    },
+                    {
+                        "away": "Atlético Goianiense",
+                        "date": "2015-09-15T23:30:00+00:00",
+                        "home": "Náutico",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Náutico",
+                        "date": "2015-06-13T19:30:00+00:00",
+                        "home": "Atlético Goianiense",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Atlético Goianiense",
+                        "date": "2014-10-25T19:20:00+00:00",
+                        "home": "Náutico",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Náutico",
+                        "date": "2014-07-26T19:20:00+00:00",
+                        "home": "Atlético Goianiense",
+                        "score": "2-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 10060,
+            "league_id": 34,
+            "season_id": 52,
+            "home_team_id": 836,
+            "home_team": "Grêmio Novorizontino",
+            "away_team_id": 156,
+            "away_team": "Juventude",
+            "home_coach_id": 119,
+            "away_coach_id": 118,
+            "referee_id": 2660,
+            "venue_id": 628,
+            "event_date": "2026-08-09T19:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 21,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 879,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 6.4,
+                "temperature_c": 33
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 3,
+                "home_wins": 1,
+                "draws": 1,
+                "away_wins": 1,
+                "home_goals": 1,
+                "away_goals": 1,
+                "avg_total_goals": 0.6666666666666666,
+                "home_win_rate": 0.3333333333333333,
+                "away_win_rate": 0.3333333333333333,
+                "recent_matches": [
+                    {
+                        "away": "Grêmio Novorizontino",
+                        "date": "2026-03-31T21:30:00+00:00",
+                        "home": "Juventude",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Grêmio Novorizontino",
+                        "date": "2023-08-03T00:30:00+00:00",
+                        "home": "Juventude",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Juventude",
+                        "date": "2023-04-22T20:00:00+00:00",
+                        "home": "Grêmio Novorizontino",
+                        "score": "1-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 7210,
+            "league_id": 9,
+            "season_id": 28,
+            "home_team_id": 162,
+            "home_team": "Palmeiras",
+            "away_team_id": 161,
+            "away_team": "Internacional",
+            "home_coach_id": 162,
+            "away_coach_id": 140,
+            "referee_id": 1830,
+            "venue_id": 159,
+            "event_date": "2026-08-09T19:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 22,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 858,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 8.5,
+                "temperature_c": 29
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 6,
+                "home_wins": 3,
+                "draws": 1,
+                "away_wins": 2,
+                "home_goals": 7,
+                "away_goals": 6,
+                "avg_total_goals": 2.1666666666666665,
+                "home_win_rate": 0.5,
+                "away_win_rate": 0.3333333333333333,
+                "recent_matches": [
+                    {
+                        "away": "Palmeiras",
+                        "date": "2019-07-18T00:30:00+00:00",
+                        "home": "Internacional",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Internacional",
+                        "date": "2019-07-11T00:30:00+00:00",
+                        "home": "Palmeiras",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Palmeiras",
+                        "date": "2017-06-01T00:45:00+00:00",
+                        "home": "Internacional",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Internacional",
+                        "date": "2017-05-18T00:45:00+00:00",
+                        "home": "Palmeiras",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Internacional",
+                        "date": "2015-10-01T01:00:00+00:00",
+                        "home": "Palmeiras",
+                        "score": "3-2"
+                    },
+                    {
+                        "away": "Palmeiras",
+                        "date": "2015-09-23T22:30:00+00:00",
+                        "home": "Internacional",
+                        "score": "1-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 7204,
+            "league_id": 9,
+            "season_id": 28,
+            "home_team_id": 166,
+            "home_team": "Bahia",
+            "away_team_id": 164,
+            "away_team": "Vasco da Gama",
+            "home_coach_id": 145,
+            "away_coach_id": 290,
+            "referee_id": 1802,
+            "venue_id": 163,
+            "event_date": "2026-08-09T19:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 22,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 1220,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 24.6,
+                "temperature_c": 24
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 2,
+                "home_wins": 1,
+                "draws": 0,
+                "away_wins": 1,
+                "home_goals": 3,
+                "away_goals": 2,
+                "avg_total_goals": 2.5,
+                "home_win_rate": 0.5,
+                "away_win_rate": 0.5,
+                "recent_matches": [
+                    {
+                        "away": "Bahia",
+                        "date": "2018-07-16T23:00:00+00:00",
+                        "home": "Vasco da Gama",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Vasco da Gama",
+                        "date": "2018-05-10T00:45:00+00:00",
+                        "home": "Bahia",
+                        "score": "3-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 219690,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 1277,
+            "home_team": "Frosinone",
+            "away_team_id": 70,
+            "away_team": "Lazio",
+            "home_coach_id": 1021,
+            "away_coach_id": 1896,
+            "referee_id": null,
+            "venue_id": 742,
+            "event_date": "2026-08-09T18:45:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 79,
+            "weather": {
+                "code": 1,
+                "description": "clear",
+                "wind_speed": 4.7,
+                "temperature_c": 32
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 6,
+                "home_wins": 0,
+                "draws": 1,
+                "away_wins": 5,
+                "home_goals": 3,
+                "away_goals": 10,
+                "avg_total_goals": 2.1666666666666665,
+                "home_win_rate": 0.0,
+                "away_win_rate": 0.8333333333333334,
+                "recent_matches": [
+                    {
+                        "away": "Lazio",
+                        "date": "2024-03-16T19:45:00+00:00",
+                        "home": "Frosinone",
+                        "score": "2-3"
+                    },
+                    {
+                        "away": "Frosinone",
+                        "date": "2023-12-29T19:45:00+00:00",
+                        "home": "Lazio",
+                        "score": "3-1"
+                    },
+                    {
+                        "away": "Lazio",
+                        "date": "2019-02-04T18:00:00+00:00",
+                        "home": "Frosinone",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Frosinone",
+                        "date": "2018-09-02T18:30:00+00:00",
+                        "home": "Lazio",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Lazio",
+                        "date": "2016-02-21T17:00:00+00:00",
+                        "home": "Frosinone",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Frosinone",
+                        "date": "2015-10-04T16:00:00+00:00",
+                        "home": "Lazio",
+                        "score": "2-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 580467,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 1607,
+            "home_team": "Mantova",
+            "away_team_id": 1278,
+            "away_team": "Carpi",
+            "home_coach_id": 1041,
+            "away_coach_id": 2876,
+            "referee_id": null,
+            "venue_id": null,
+            "event_date": "2026-08-09T18:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 214557,
+            "league_id": 23,
+            "season_id": 1396,
+            "home_team_id": 359,
+            "home_team": "Universitatea Craiova",
+            "away_team_id": 356,
+            "away_team": "FC Argeș Pitești",
+            "home_coach_id": 478,
+            "away_coach_id": 285,
+            "referee_id": null,
+            "venue_id": 339,
+            "event_date": "2026-08-09T18:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 4,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 17.1,
+                "temperature_c": 37
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 12,
+                "home_wins": 7,
+                "draws": 0,
+                "away_wins": 3,
+                "home_goals": 17,
+                "away_goals": 7,
+                "avg_total_goals": 2.0,
+                "home_win_rate": 0.5833333333333334,
+                "away_win_rate": 0.25,
+                "recent_matches": [
+                    {
+                        "away": "Universitatea Craiova",
+                        "date": "2026-04-27T17:30:00+00:00",
+                        "home": "FC Argeș Pitești",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "FC Argeș Pitești",
+                        "date": "2026-03-13T18:30:00+00:00",
+                        "home": "Universitatea Craiova",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Universitatea Craiova",
+                        "date": "2025-11-21T18:30:00+00:00",
+                        "home": "FC Argeș Pitești",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "FC Argeș Pitești",
+                        "date": "2025-07-18T18:30:00+00:00",
+                        "home": "Universitatea Craiova",
+                        "score": "3-1"
+                    },
+                    {
+                        "away": "FC Argeș Pitești",
+                        "date": "2023-03-01T16:00:00+00:00",
+                        "home": "Universitatea Craiova",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Universitatea Craiova",
+                        "date": "2022-10-07T18:00:00+00:00",
+                        "home": "FC Argeș Pitești",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Universitatea Craiova",
+                        "date": "2022-04-25T15:00:00+00:00",
+                        "home": "FC Argeș Pitești",
+                        "score": "0-4"
+                    },
+                    {
+                        "away": "FC Argeș Pitești",
+                        "date": "2022-03-11T18:30:00+00:00",
+                        "home": "Universitatea Craiova",
+                        "score": "3-0"
+                    },
+                    {
+                        "away": "Universitatea Craiova",
+                        "date": "2021-11-21T16:00:00+00:00",
+                        "home": "FC Argeș Pitești",
+                        "score": "3-2"
+                    },
+                    {
+                        "away": "FC Argeș Pitești",
+                        "date": "2021-07-17T18:30:00+00:00",
+                        "home": "Universitatea Craiova",
+                        "score": "1-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 211852,
+            "league_id": 25,
+            "season_id": 1229,
+            "home_team_id": 420,
+            "home_team": "Jagiellonia Białystok",
+            "away_team_id": 423,
+            "away_team": "Widzew Łódź",
+            "home_coach_id": 307,
+            "away_coach_id": 232,
+            "referee_id": 1860,
+            "venue_id": 401,
+            "event_date": "2026-08-09T18:15:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 3,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 289,
+            "weather": {
+                "code": 51,
+                "description": null,
+                "wind_speed": 15.9,
+                "temperature_c": 21
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 17,
+                "home_wins": 7,
+                "draws": 2,
+                "away_wins": 1,
+                "home_goals": 16,
+                "away_goals": 9,
+                "avg_total_goals": 1.4705882352941178,
+                "home_win_rate": 0.4117647058823529,
+                "away_win_rate": 0.058823529411764705,
+                "recent_matches": [
+                    {
+                        "away": "Jagiellonia Białystok",
+                        "date": "2026-01-31T16:30:00+00:00",
+                        "home": "Widzew Łódź",
+                        "score": "1-3"
+                    },
+                    {
+                        "away": "Widzew Łódź",
+                        "date": "2025-07-27T15:30:00+00:00",
+                        "home": "Jagiellonia Białystok",
+                        "score": "3-2"
+                    },
+                    {
+                        "away": "Jagiellonia Białystok",
+                        "date": "2025-03-09T16:30:00+00:00",
+                        "home": "Widzew Łódź",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Widzew Łódź",
+                        "date": "2024-09-01T18:15:00+00:00",
+                        "home": "Jagiellonia Białystok",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Jagiellonia Białystok",
+                        "date": "2024-02-11T14:00:00+00:00",
+                        "home": "Widzew Łódź",
+                        "score": "1-3"
+                    },
+                    {
+                        "away": "Widzew Łódź",
+                        "date": "2023-08-04T16:00:00+00:00",
+                        "home": "Jagiellonia Białystok",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Jagiellonia Białystok",
+                        "date": "2023-02-03T20:00:00+00:00",
+                        "home": "Widzew Łódź",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Widzew Łódź",
+                        "date": "2022-07-22T18:30:00+00:00",
+                        "home": "Jagiellonia Białystok",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Jagiellonia Białystok",
+                        "date": "2014-05-16T16:00:00+00:00",
+                        "home": "Widzew Łódź",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Widzew Łódź",
+                        "date": "2013-12-13T17:00:00+00:00",
+                        "home": "Jagiellonia Białystok",
+                        "score": "1-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 211676,
+            "league_id": 22,
+            "season_id": 1326,
+            "home_team_id": 343,
+            "home_team": "FK Septemvri Sofia",
+            "away_team_id": 345,
+            "away_team": "CSKA Sofia",
+            "home_coach_id": 3166,
+            "away_coach_id": 292,
+            "referee_id": null,
+            "venue_id": 323,
+            "event_date": "2026-08-09T18:15:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 4,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": true,
+            "is_neutral_ground": false,
+            "travel_distance_km": 6,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 11.3,
+                "temperature_c": 32
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 10,
+                "home_wins": 2,
+                "draws": 0,
+                "away_wins": 8,
+                "home_goals": 5,
+                "away_goals": 17,
+                "avg_total_goals": 2.2,
+                "home_win_rate": 0.2,
+                "away_win_rate": 0.8,
+                "recent_matches": [
+                    {
+                        "away": "CSKA Sofia",
+                        "date": "2026-02-28T15:30:00+00:00",
+                        "home": "FK Septemvri Sofia",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "FK Septemvri Sofia",
+                        "date": "2025-09-13T17:15:00+00:00",
+                        "home": "CSKA Sofia",
+                        "score": "3-1"
+                    },
+                    {
+                        "away": "CSKA Sofia",
+                        "date": "2025-03-29T15:15:00+00:00",
+                        "home": "FK Septemvri Sofia",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "FK Septemvri Sofia",
+                        "date": "2024-10-05T14:30:00+00:00",
+                        "home": "CSKA Sofia",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "CSKA Sofia",
+                        "date": "2023-02-26T15:15:00+00:00",
+                        "home": "FK Septemvri Sofia",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "FK Septemvri Sofia",
+                        "date": "2022-08-14T17:00:00+00:00",
+                        "home": "CSKA Sofia",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "FK Septemvri Sofia",
+                        "date": "2019-03-02T15:30:00+00:00",
+                        "home": "CSKA Sofia",
+                        "score": "5-1"
+                    },
+                    {
+                        "away": "CSKA Sofia",
+                        "date": "2018-10-06T14:30:00+00:00",
+                        "home": "FK Septemvri Sofia",
+                        "score": "0-3"
+                    },
+                    {
+                        "away": "FK Septemvri Sofia",
+                        "date": "2017-11-30T15:30:00+00:00",
+                        "home": "CSKA Sofia",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "CSKA Sofia",
+                        "date": "2017-08-11T18:00:00+00:00",
+                        "home": "FK Septemvri Sofia",
+                        "score": "0-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 223548,
+            "league_id": 85,
+            "season_id": 1635,
+            "home_team_id": 742,
+            "home_team": "San Lorenzo",
+            "away_team_id": 2352,
+            "away_team": "Huracán",
+            "home_coach_id": 2668,
+            "away_coach_id": 2691,
+            "referee_id": 2112,
+            "venue_id": 548,
+            "event_date": "2026-08-09T18:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 4,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 4,
+            "weather": {
+                "code": 2,
+                "description": "cloudy",
+                "wind_speed": 19.9,
+                "temperature_c": 10
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 22,
+                "home_wins": 1,
+                "draws": 5,
+                "away_wins": 4,
+                "home_goals": 5,
+                "away_goals": 10,
+                "avg_total_goals": 0.6818181818181818,
+                "home_win_rate": 0.045454545454545456,
+                "away_win_rate": 0.18181818181818182,
+                "recent_matches": [
+                    {
+                        "away": "San Lorenzo",
+                        "date": "2026-02-08T22:15:00+00:00",
+                        "home": "Huracán",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Huracán",
+                        "date": "2025-08-30T17:45:00+00:00",
+                        "home": "San Lorenzo",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "San Lorenzo",
+                        "date": "2025-02-23T21:00:00+00:00",
+                        "home": "Huracán",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Huracán",
+                        "date": "2024-07-20T18:00:00+00:00",
+                        "home": "San Lorenzo",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "San Lorenzo",
+                        "date": "2023-03-05T22:15:00+00:00",
+                        "home": "Huracán",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Huracán",
+                        "date": "2022-10-01T18:30:00+00:00",
+                        "home": "San Lorenzo",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "San Lorenzo",
+                        "date": "2021-10-24T21:00:00+00:00",
+                        "home": "Huracán",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "San Lorenzo",
+                        "date": "2019-10-20T18:30:00+00:00",
+                        "home": "Huracán",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Huracán",
+                        "date": "2019-01-20T21:00:00+00:00",
+                        "home": "San Lorenzo",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "San Lorenzo",
+                        "date": "2018-03-11T20:00:00+00:00",
+                        "home": "Huracán",
+                        "score": "1-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 219689,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 74,
+            "home_team": "Parma",
+            "away_team_id": 1271,
+            "away_team": "Sampdoria",
+            "home_coach_id": 314,
+            "away_coach_id": 1907,
+            "referee_id": null,
+            "venue_id": 73,
+            "event_date": "2026-08-09T18:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 118,
+            "weather": {
+                "code": 2,
+                "description": "cloudy",
+                "wind_speed": 12.0,
+                "temperature_c": 36
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 44,
+                "home_wins": 2,
+                "draws": 3,
+                "away_wins": 5,
+                "home_goals": 11,
+                "away_goals": 18,
+                "avg_total_goals": 0.6590909090909091,
+                "home_win_rate": 0.045454545454545456,
+                "away_win_rate": 0.11363636363636363,
+                "recent_matches": [
+                    {
+                        "away": "Parma",
+                        "date": "2021-05-22T18:45:00+00:00",
+                        "home": "Sampdoria",
+                        "score": "3-0"
+                    },
+                    {
+                        "away": "Sampdoria",
+                        "date": "2021-01-24T19:45:00+00:00",
+                        "home": "Parma",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Sampdoria",
+                        "date": "2020-07-19T15:15:00+00:00",
+                        "home": "Parma",
+                        "score": "2-3"
+                    },
+                    {
+                        "away": "Parma",
+                        "date": "2019-12-08T17:00:00+00:00",
+                        "home": "Sampdoria",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Sampdoria",
+                        "date": "2019-05-05T13:00:00+00:00",
+                        "home": "Parma",
+                        "score": "3-3"
+                    },
+                    {
+                        "away": "Parma",
+                        "date": "2018-12-16T14:00:00+00:00",
+                        "home": "Sampdoria",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Parma",
+                        "date": "2015-05-31T18:45:00+00:00",
+                        "home": "Sampdoria",
+                        "score": "2-2"
+                    },
+                    {
+                        "away": "Sampdoria",
+                        "date": "2015-01-18T14:00:00+00:00",
+                        "home": "Parma",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Sampdoria",
+                        "date": "2014-05-04T13:00:00+00:00",
+                        "home": "Parma",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Parma",
+                        "date": "2013-12-22T14:00:00+00:00",
+                        "home": "Sampdoria",
+                        "score": "1-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 215470,
+            "league_id": 42,
+            "season_id": 1155,
+            "home_team_id": 3887,
+            "home_team": "Arezzo",
+            "away_team_id": 3888,
+            "away_team": "Union Brescia",
+            "home_coach_id": 2010,
+            "away_coach_id": 2011,
+            "referee_id": null,
+            "venue_id": null,
+            "event_date": "2026-08-09T17:45:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 300,
+            "round_name": "Preliminary",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 211311,
+            "league_id": 14,
+            "season_id": 1327,
+            "home_team_id": 233,
+            "home_team": "Royal Antwerp FC",
+            "away_team_id": 2414,
+            "away_team": "SK Beveren",
+            "home_coach_id": 1600,
+            "away_coach_id": 1925,
+            "referee_id": 2150,
+            "venue_id": 225,
+            "event_date": "2026-08-09T17:15:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": true,
+            "is_neutral_ground": false,
+            "travel_distance_km": 16,
+            "weather": {
+                "code": 53,
+                "description": null,
+                "wind_speed": 9.5,
+                "temperature_c": 16
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 8,
+                "home_wins": 5,
+                "draws": 0,
+                "away_wins": 3,
+                "home_goals": 16,
+                "away_goals": 10,
+                "avg_total_goals": 3.25,
+                "home_win_rate": 0.625,
+                "away_win_rate": 0.375,
+                "recent_matches": [
+                    {
+                        "away": "SK Beveren",
+                        "date": "2021-01-29T19:45:00+00:00",
+                        "home": "Royal Antwerp FC",
+                        "score": "3-2"
+                    },
+                    {
+                        "away": "Royal Antwerp FC",
+                        "date": "2020-12-20T19:45:00+00:00",
+                        "home": "SK Beveren",
+                        "score": "0-3"
+                    },
+                    {
+                        "away": "Royal Antwerp FC",
+                        "date": "2019-12-06T19:30:00+00:00",
+                        "home": "SK Beveren",
+                        "score": "0-4"
+                    },
+                    {
+                        "away": "SK Beveren",
+                        "date": "2019-08-04T18:00:00+00:00",
+                        "home": "Royal Antwerp FC",
+                        "score": "4-1"
+                    },
+                    {
+                        "away": "SK Beveren",
+                        "date": "2018-12-15T19:30:00+00:00",
+                        "home": "Royal Antwerp FC",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Royal Antwerp FC",
+                        "date": "2018-10-28T19:00:00+00:00",
+                        "home": "SK Beveren",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "SK Beveren",
+                        "date": "2018-02-02T19:30:00+00:00",
+                        "home": "Royal Antwerp FC",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Royal Antwerp FC",
+                        "date": "2017-09-30T18:00:00+00:00",
+                        "home": "SK Beveren",
+                        "score": "3-0"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 207039,
+            "league_id": 54,
+            "season_id": 1230,
+            "home_team_id": 2079,
+            "home_team": "Kristiansund BK",
+            "away_team_id": 2077,
+            "away_team": "Molde FK",
+            "home_coach_id": 1499,
+            "away_coach_id": 1671,
+            "referee_id": 1628,
+            "venue_id": 1281,
+            "event_date": "2026-08-09T17:15:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 17,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 51,
+            "weather": {
+                "code": 51,
+                "description": null,
+                "wind_speed": 16.3,
+                "temperature_c": 10
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 17,
+                "home_wins": 3,
+                "draws": 1,
+                "away_wins": 6,
+                "home_goals": 10,
+                "away_goals": 17,
+                "avg_total_goals": 1.588235294117647,
+                "home_win_rate": 0.17647058823529413,
+                "away_win_rate": 0.35294117647058826,
+                "recent_matches": [
+                    {
+                        "away": "Kristiansund BK",
+                        "date": "2026-05-16T14:00:00+00:00",
+                        "home": "Molde FK",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Molde FK",
+                        "date": "2025-10-04T16:00:00+00:00",
+                        "home": "Kristiansund BK",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Kristiansund BK",
+                        "date": "2025-05-16T16:00:00+00:00",
+                        "home": "Molde FK",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Molde FK",
+                        "date": "2024-09-18T16:00:00+00:00",
+                        "home": "Kristiansund BK",
+                        "score": "0-4"
+                    },
+                    {
+                        "away": "Kristiansund BK",
+                        "date": "2024-04-14T15:00:00+00:00",
+                        "home": "Molde FK",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Molde FK",
+                        "date": "2022-08-07T16:00:00+00:00",
+                        "home": "Kristiansund BK",
+                        "score": "2-3"
+                    },
+                    {
+                        "away": "Kristiansund BK",
+                        "date": "2022-05-21T16:00:00+00:00",
+                        "home": "Molde FK",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Molde FK",
+                        "date": "2021-08-29T16:00:00+00:00",
+                        "home": "Kristiansund BK",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Kristiansund BK",
+                        "date": "2021-05-09T16:00:00+00:00",
+                        "home": "Molde FK",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Kristiansund BK",
+                        "date": "2020-11-08T17:00:00+00:00",
+                        "home": "Molde FK",
+                        "score": "2-2"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 215495,
+            "league_id": 2,
+            "season_id": 1310,
+            "home_team_id": 35,
+            "home_team": "FC Porto",
+            "away_team_id": 30,
+            "away_team": "FC Alverca",
+            "home_coach_id": 15,
+            "away_coach_id": 2023,
+            "referee_id": 1594,
+            "venue_id": 35,
+            "event_date": "2026-08-09T17:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 317,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 16.8,
+                "temperature_c": 29
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 2,
+                "home_wins": 2,
+                "draws": 0,
+                "away_wins": 0,
+                "home_goals": 4,
+                "away_goals": 0,
+                "avg_total_goals": 2.0,
+                "home_win_rate": 1.0,
+                "away_win_rate": 0.0,
+                "recent_matches": [
+                    {
+                        "away": "FC Alverca",
+                        "date": "2026-05-02T19:30:00+00:00",
+                        "home": "FC Porto",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "FC Porto",
+                        "date": "2025-12-22T18:45:00+00:00",
+                        "home": "FC Alverca",
+                        "score": "0-3"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 220820,
+            "league_id": 82,
+            "season_id": 1600,
+            "home_team_id": 4029,
+            "home_team": "Leça FC",
+            "away_team_id": 4286,
+            "away_team": "SC São João Ver",
+            "home_coach_id": 2110,
+            "away_coach_id": null,
+            "referee_id": null,
+            "venue_id": null,
+            "event_date": "2026-08-09T16:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": "Group A",
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 30,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 211310,
+            "league_id": 14,
+            "season_id": 1327,
+            "home_team_id": 240,
+            "home_team": "RSC Anderlecht",
+            "away_team_id": 238,
+            "away_team": "RAAL La Louvière",
+            "home_coach_id": 1899,
+            "away_coach_id": 180,
+            "referee_id": 1814,
+            "venue_id": 231,
+            "event_date": "2026-08-09T16:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": 51,
+                "description": null,
+                "wind_speed": 11.8,
+                "temperature_c": 17
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 13,
+                "home_wins": 7,
+                "draws": 3,
+                "away_wins": 0,
+                "home_goals": 23,
+                "away_goals": 7,
+                "avg_total_goals": 2.3076923076923075,
+                "home_win_rate": 0.5384615384615384,
+                "away_win_rate": 0.0,
+                "recent_matches": [
+                    {
+                        "away": "RAAL La Louvière",
+                        "date": "2026-02-15T17:45:00+00:00",
+                        "home": "RSC Anderlecht",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "RSC Anderlecht",
+                        "date": "2025-11-23T17:30:00+00:00",
+                        "home": "RAAL La Louvière",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "RAAL La Louvière",
+                        "date": "2005-08-06T18:00:00+00:00",
+                        "home": "RSC Anderlecht",
+                        "score": "6-0"
+                    },
+                    {
+                        "away": "RSC Anderlecht",
+                        "date": "2005-04-16T18:00:00+00:00",
+                        "home": "RAAL La Louvière",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "RAAL La Louvière",
+                        "date": "2004-11-06T17:00:00+00:00",
+                        "home": "RSC Anderlecht",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "RAAL La Louvière",
+                        "date": "2004-05-15T18:00:00+00:00",
+                        "home": "RSC Anderlecht",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "RSC Anderlecht",
+                        "date": "2003-12-21T19:00:00+00:00",
+                        "home": "RAAL La Louvière",
+                        "score": "1-4"
+                    },
+                    {
+                        "away": "RAAL La Louvière",
+                        "date": "2003-05-17T18:00:00+00:00",
+                        "home": "RSC Anderlecht",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "RSC Anderlecht",
+                        "date": "2002-12-15T18:30:00+00:00",
+                        "home": "RAAL La Louvière",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "RAAL La Louvière",
+                        "date": "2002-01-19T19:00:00+00:00",
+                        "home": "RSC Anderlecht",
+                        "score": "5-2"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 580466,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 1597,
+            "home_team": "Modena",
+            "away_team_id": 7869,
+            "away_team": "A.S.D. Cittadella Vis Modena",
+            "home_coach_id": 1900,
+            "away_coach_id": 3400,
+            "referee_id": null,
+            "venue_id": null,
+            "event_date": "2026-08-09T16:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 221488,
+            "league_id": 84,
+            "season_id": 1612,
+            "home_team_id": 3444,
+            "home_team": "AC Horsens",
+            "away_team_id": 1375,
+            "away_team": "Brøndby IF",
+            "home_coach_id": 2112,
+            "away_coach_id": 2147,
+            "referee_id": 2581,
+            "venue_id": 1700,
+            "event_date": "2026-08-09T16:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 3,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 162,
+            "weather": {
+                "code": 3,
+                "description": "rain",
+                "wind_speed": 29.0,
+                "temperature_c": 16
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 26,
+                "home_wins": 3,
+                "draws": 1,
+                "away_wins": 6,
+                "home_goals": 15,
+                "away_goals": 25,
+                "avg_total_goals": 1.5384615384615385,
+                "home_win_rate": 0.11538461538461539,
+                "away_win_rate": 0.23076923076923078,
+                "recent_matches": [
+                    {
+                        "away": "AC Horsens",
+                        "date": "2023-02-19T17:00:00+00:00",
+                        "home": "Brøndby IF",
+                        "score": "5-2"
+                    },
+                    {
+                        "away": "Brøndby IF",
+                        "date": "2022-09-04T14:00:00+00:00",
+                        "home": "AC Horsens",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Brøndby IF",
+                        "date": "2020-12-20T19:00:00+00:00",
+                        "home": "AC Horsens",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "AC Horsens",
+                        "date": "2020-09-27T14:00:00+00:00",
+                        "home": "Brøndby IF",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Brøndby IF",
+                        "date": "2020-06-07T15:00:00+00:00",
+                        "home": "AC Horsens",
+                        "score": "3-2"
+                    },
+                    {
+                        "away": "AC Horsens",
+                        "date": "2019-08-04T14:00:00+00:00",
+                        "home": "Brøndby IF",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Brøndby IF",
+                        "date": "2019-03-17T16:00:00+00:00",
+                        "home": "AC Horsens",
+                        "score": "1-3"
+                    },
+                    {
+                        "away": "AC Horsens",
+                        "date": "2018-09-30T16:00:00+00:00",
+                        "home": "Brøndby IF",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Brøndby IF",
+                        "date": "2018-05-18T18:00:00+00:00",
+                        "home": "AC Horsens",
+                        "score": "2-2"
+                    },
+                    {
+                        "away": "AC Horsens",
+                        "date": "2018-04-08T14:00:00+00:00",
+                        "home": "Brøndby IF",
+                        "score": "5-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 220819,
+            "league_id": 82,
+            "season_id": 1600,
+            "home_team_id": 4819,
+            "home_team": "CD Trofense",
+            "away_team_id": 3648,
+            "away_team": "Varzim SC",
+            "home_coach_id": null,
+            "away_coach_id": 2121,
+            "referee_id": null,
+            "venue_id": null,
+            "event_date": "2026-08-09T16:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": "Group A",
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 18,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 6,
+                "home_wins": 5,
+                "draws": 1,
+                "away_wins": 0,
+                "home_goals": 9,
+                "away_goals": 3,
+                "avg_total_goals": 2.0,
+                "home_win_rate": 0.8333333333333334,
+                "away_win_rate": 0.0,
+                "recent_matches": [
+                    {
+                        "away": "Varzim SC",
+                        "date": "2022-04-25T14:30:00+00:00",
+                        "home": "CD Trofense",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "CD Trofense",
+                        "date": "2021-12-12T19:30:00+00:00",
+                        "home": "Varzim SC",
+                        "score": "1-3"
+                    },
+                    {
+                        "away": "Varzim SC",
+                        "date": "2011-02-20T16:00:00+00:00",
+                        "home": "CD Trofense",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "CD Trofense",
+                        "date": "2010-09-26T15:00:00+00:00",
+                        "home": "Varzim SC",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "CD Trofense",
+                        "date": "2010-03-28T15:00:00+00:00",
+                        "home": "Varzim SC",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Varzim SC",
+                        "date": "2009-11-08T16:00:00+00:00",
+                        "home": "CD Trofense",
+                        "score": "2-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 220817,
+            "league_id": 82,
+            "season_id": 1600,
+            "home_team_id": 4827,
+            "home_team": "AD Fafe",
+            "away_team_id": 4830,
+            "away_team": "SC Vianense",
+            "home_coach_id": 2916,
+            "away_coach_id": 2919,
+            "referee_id": null,
+            "venue_id": null,
+            "event_date": "2026-08-09T16:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "",
+            "group_name": "Group A",
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 4,
+                "home_wins": 3,
+                "draws": 0,
+                "away_wins": 1,
+                "home_goals": 5,
+                "away_goals": 1,
+                "avg_total_goals": 1.5,
+                "home_win_rate": 0.75,
+                "away_win_rate": 0.25,
+                "recent_matches": [
+                    {
+                        "away": "AD Fafe",
+                        "date": "2024-04-14T14:00:00+00:00",
+                        "home": "SC Vianense",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "SC Vianense",
+                        "date": "2024-03-16T15:00:00+00:00",
+                        "home": "AD Fafe",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "AD Fafe",
+                        "date": "2023-11-18T15:00:00+00:00",
+                        "home": "SC Vianense",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "SC Vianense",
+                        "date": "2023-08-08T17:00:00+00:00",
+                        "home": "AD Fafe",
+                        "score": "0-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 211674,
+            "league_id": 22,
+            "season_id": 1326,
+            "home_team_id": 342,
+            "home_team": "Cherno More Varna",
+            "away_team_id": 136,
+            "away_team": "Ludogorets",
+            "home_coach_id": 365,
+            "away_coach_id": 2068,
+            "referee_id": null,
+            "venue_id": 322,
+            "event_date": "2026-08-09T16:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 4,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 119,
+            "weather": {
+                "code": 0,
+                "description": "unknown",
+                "wind_speed": 24.4,
+                "temperature_c": 26
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 43,
+                "home_wins": 3,
+                "draws": 4,
+                "away_wins": 3,
+                "home_goals": 9,
+                "away_goals": 7,
+                "avg_total_goals": 0.37209302325581395,
+                "home_win_rate": 0.06976744186046512,
+                "away_win_rate": 0.06976744186046512,
+                "recent_matches": [
+                    {
+                        "away": "Cherno More Varna",
+                        "date": "2026-04-09T15:00:00+00:00",
+                        "home": "Ludogorets",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Ludogorets",
+                        "date": "2025-11-02T15:45:00+00:00",
+                        "home": "Cherno More Varna",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Ludogorets",
+                        "date": "2025-05-13T14:45:00+00:00",
+                        "home": "Cherno More Varna",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Cherno More Varna",
+                        "date": "2025-04-27T17:30:00+00:00",
+                        "home": "Ludogorets",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Ludogorets",
+                        "date": "2025-02-22T15:30:00+00:00",
+                        "home": "Cherno More Varna",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Cherno More Varna",
+                        "date": "2024-09-01T18:30:00+00:00",
+                        "home": "Ludogorets",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Ludogorets",
+                        "date": "2024-05-19T17:30:00+00:00",
+                        "home": "Cherno More Varna",
+                        "score": "4-0"
+                    },
+                    {
+                        "away": "Cherno More Varna",
+                        "date": "2024-02-19T14:00:00+00:00",
+                        "home": "Ludogorets",
+                        "score": "3-1"
+                    },
+                    {
+                        "away": "Ludogorets",
+                        "date": "2023-08-20T18:15:00+00:00",
+                        "home": "Cherno More Varna",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Ludogorets",
+                        "date": "2023-06-07T15:45:00+00:00",
+                        "home": "Cherno More Varna",
+                        "score": "0-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 207287,
+            "league_id": 55,
+            "season_id": 1446,
+            "home_team_id": 2097,
+            "home_team": "AC Oulu",
+            "away_team_id": 2096,
+            "away_team": "HJK",
+            "home_coach_id": 1527,
+            "away_coach_id": 1526,
+            "referee_id": null,
+            "venue_id": 1299,
+            "event_date": "2026-08-09T16:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": 2,
+                "description": "cloudy",
+                "wind_speed": 11.6,
+                "temperature_c": 15
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 13,
+                "home_wins": 4,
+                "draws": 2,
+                "away_wins": 4,
+                "home_goals": 9,
+                "away_goals": 16,
+                "avg_total_goals": 1.9230769230769231,
+                "home_win_rate": 0.3076923076923077,
+                "away_win_rate": 0.3076923076923077,
+                "recent_matches": [
+                    {
+                        "away": "AC Oulu",
+                        "date": "2026-04-11T14:00:00+00:00",
+                        "home": "HJK",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "AC Oulu",
+                        "date": "2025-07-20T15:30:00+00:00",
+                        "home": "HJK",
+                        "score": "3-1"
+                    },
+                    {
+                        "away": "HJK",
+                        "date": "2025-06-14T14:00:00+00:00",
+                        "home": "AC Oulu",
+                        "score": "0-4"
+                    },
+                    {
+                        "away": "AC Oulu",
+                        "date": "2024-07-27T14:00:00+00:00",
+                        "home": "HJK",
+                        "score": "3-0"
+                    },
+                    {
+                        "away": "HJK",
+                        "date": "2024-05-31T17:00:00+00:00",
+                        "home": "AC Oulu",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "HJK",
+                        "date": "2023-08-27T15:00:00+00:00",
+                        "home": "AC Oulu",
+                        "score": "1-3"
+                    },
+                    {
+                        "away": "AC Oulu",
+                        "date": "2023-04-23T15:30:00+00:00",
+                        "home": "HJK",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "HJK",
+                        "date": "2022-08-07T16:00:00+00:00",
+                        "home": "AC Oulu",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "AC Oulu",
+                        "date": "2022-06-18T14:00:00+00:00",
+                        "home": "HJK",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "HJK",
+                        "date": "2021-07-17T15:30:00+00:00",
+                        "home": "AC Oulu",
+                        "score": "2-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 580790,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 1606,
+            "home_team": "Juve Stabia",
+            "away_team_id": 8150,
+            "away_team": "Campobasso FC",
+            "home_coach_id": 2019,
+            "away_coach_id": 3407,
+            "referee_id": null,
+            "venue_id": null,
+            "event_date": "2026-08-09T15:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 580465,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 60,
+            "home_team": "Lecce",
+            "away_team_id": 6195,
+            "away_team": "Monopoli",
+            "home_coach_id": 456,
+            "away_coach_id": 3399,
+            "referee_id": null,
+            "venue_id": 60,
+            "event_date": "2026-08-09T15:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 102,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 220439,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 98,
+            "home_team": "Olympique de Marseille",
+            "away_team_id": 51,
+            "away_team": "Athletic Club",
+            "home_coach_id": 321,
+            "away_coach_id": 1992,
+            "referee_id": null,
+            "venue_id": 1735,
+            "event_date": "2026-08-09T15:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 4,
+                "home_wins": 2,
+                "draws": 1,
+                "away_wins": 1,
+                "home_goals": 6,
+                "away_goals": 4,
+                "avg_total_goals": 2.5,
+                "home_win_rate": 0.5,
+                "away_win_rate": 0.25,
+                "recent_matches": [
+                    {
+                        "away": "Olympique de Marseille",
+                        "date": "2018-03-15T18:00:00+00:00",
+                        "home": "Athletic Club",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Athletic Club",
+                        "date": "2018-03-08T20:05:00+00:00",
+                        "home": "Olympique de Marseille",
+                        "score": "3-1"
+                    },
+                    {
+                        "away": "Olympique de Marseille",
+                        "date": "2016-02-25T18:00:00+00:00",
+                        "home": "Athletic Club",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "Athletic Club",
+                        "date": "2016-02-18T20:05:00+00:00",
+                        "home": "Olympique de Marseille",
+                        "score": "0-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 214554,
+            "league_id": 23,
+            "season_id": 1396,
+            "home_team_id": 362,
+            "home_team": "FC Petrolul Ploiești",
+            "away_team_id": 361,
+            "away_team": "SC Oțelul Galați",
+            "home_coach_id": 1994,
+            "away_coach_id": 227,
+            "referee_id": null,
+            "venue_id": 342,
+            "event_date": "2026-08-09T15:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 4,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 166,
+            "weather": {
+                "code": 2,
+                "description": "cloudy",
+                "wind_speed": 3.8,
+                "temperature_c": 34
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 17,
+                "home_wins": 1,
+                "draws": 7,
+                "away_wins": 2,
+                "home_goals": 7,
+                "away_goals": 12,
+                "avg_total_goals": 1.1176470588235294,
+                "home_win_rate": 0.058823529411764705,
+                "away_win_rate": 0.11764705882352941,
+                "recent_matches": [
+                    {
+                        "away": "SC Oțelul Galați",
+                        "date": "2026-05-18T17:30:00+00:00",
+                        "home": "FC Petrolul Ploiești",
+                        "score": "1-5"
+                    },
+                    {
+                        "away": "SC Oțelul Galați",
+                        "date": "2025-11-08T12:30:00+00:00",
+                        "home": "FC Petrolul Ploiești",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "FC Petrolul Ploiești",
+                        "date": "2025-07-13T15:30:00+00:00",
+                        "home": "SC Oțelul Galați",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "SC Oțelul Galați",
+                        "date": "2025-05-12T15:00:00+00:00",
+                        "home": "FC Petrolul Ploiești",
+                        "score": "1-3"
+                    },
+                    {
+                        "away": "FC Petrolul Ploiești",
+                        "date": "2025-01-18T17:30:00+00:00",
+                        "home": "SC Oțelul Galați",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "SC Oțelul Galați",
+                        "date": "2024-08-23T16:00:00+00:00",
+                        "home": "FC Petrolul Ploiești",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "SC Oțelul Galați",
+                        "date": "2024-05-05T12:30:00+00:00",
+                        "home": "FC Petrolul Ploiești",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "FC Petrolul Ploiești",
+                        "date": "2024-01-27T15:00:00+00:00",
+                        "home": "SC Oțelul Galați",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "SC Oțelul Galați",
+                        "date": "2023-09-01T15:30:00+00:00",
+                        "home": "FC Petrolul Ploiești",
+                        "score": "2-2"
+                    },
+                    {
+                        "away": "FC Petrolul Ploiești",
+                        "date": "2015-05-04T15:30:00+00:00",
+                        "home": "SC Oțelul Galați",
+                        "score": "1-1"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 211853,
+            "league_id": 25,
+            "season_id": 1229,
+            "home_team_id": 375,
+            "home_team": "Lech Poznań",
+            "away_team_id": 435,
+            "away_team": "Piast Gliwice",
+            "home_coach_id": 308,
+            "away_coach_id": 447,
+            "referee_id": 1848,
+            "venue_id": 355,
+            "event_date": "2026-08-09T15:30:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 3,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 267,
+            "weather": {
+                "code": 3,
+                "description": "rain",
+                "wind_speed": 16.9,
+                "temperature_c": 21
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 2,
+                "home_wins": 2,
+                "draws": 0,
+                "away_wins": 0,
+                "home_goals": 6,
+                "away_goals": 0,
+                "avg_total_goals": 3.0,
+                "home_win_rate": 1.0,
+                "away_win_rate": 0.0,
+                "recent_matches": [
+                    {
+                        "away": "Lech Poznań",
+                        "date": "2025-12-03T19:30:00+00:00",
+                        "home": "Piast Gliwice",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Lech Poznań",
+                        "date": "2008-09-24T16:00:00+00:00",
+                        "home": "Piast Gliwice",
+                        "score": "0-4"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 580464,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 1604,
+            "home_team": "Reggiana",
+            "away_team_id": 4727,
+            "away_team": "Alcione Milano",
+            "home_coach_id": 1955,
+            "away_coach_id": 2789,
+            "referee_id": null,
+            "venue_id": null,
+            "event_date": "2026-08-09T15:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 580463,
+            "league_id": 79,
+            "season_id": 1552,
+            "home_team_id": 83,
+            "home_team": "1. FC Union Berlin",
+            "away_team_id": 2399,
+            "away_team": "Aris Limassol",
+            "home_coach_id": 274,
+            "away_coach_id": 2736,
+            "referee_id": null,
+            "venue_id": 81,
+            "event_date": "2026-08-09T15:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": false,
+            "websocket_plus": false,
+            "highlights": [],
+            "head_to_head": null,
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 212746,
+            "league_id": 40,
+            "season_id": 1092,
+            "home_team_id": 1427,
+            "home_team": "Mansfield Town",
+            "away_team_id": 219,
+            "away_team": "Sheffield United",
+            "home_coach_id": 873,
+            "away_coach_id": 170,
+            "referee_id": null,
+            "venue_id": 877,
+            "event_date": "2026-08-09T15:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 1,
+            "round_name": "Round 1",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": null,
+            "weather": {
+                "code": 3,
+                "description": "rain",
+                "wind_speed": 15.8,
+                "temperature_c": 26
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 1,
+                "home_wins": 1,
+                "draws": 0,
+                "away_wins": 0,
+                "home_goals": 4,
+                "away_goals": 3,
+                "avg_total_goals": 7.0,
+                "home_win_rate": 1.0,
+                "away_win_rate": 0.0,
+                "recent_matches": [
+                    {
+                        "away": "Mansfield Town",
+                        "date": "2026-01-11T14:30:00+00:00",
+                        "home": "Sheffield United",
+                        "score": "3-4"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 211116,
+            "league_id": 13,
+            "season_id": 1355,
+            "home_team_id": 145,
+            "home_team": "Rangers",
+            "away_team_id": 229,
+            "away_team": "Hibernian",
+            "home_coach_id": 384,
+            "away_coach_id": 251,
+            "referee_id": null,
+            "venue_id": 143,
+            "event_date": "2026-08-09T15:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": 2,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 72,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": null,
+                "temperature_c": null
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 49,
+                "home_wins": 5,
+                "draws": 3,
+                "away_wins": 2,
+                "home_goals": 15,
+                "away_goals": 10,
+                "avg_total_goals": 0.5102040816326531,
+                "home_win_rate": 0.10204081632653061,
+                "away_win_rate": 0.04081632653061224,
+                "recent_matches": [
+                    {
+                        "away": "Hibernian",
+                        "date": "2026-05-13T19:00:00+00:00",
+                        "home": "Rangers",
+                        "score": "1-2"
+                    },
+                    {
+                        "away": "Rangers",
+                        "date": "2026-02-01T14:00:00+00:00",
+                        "home": "Hibernian",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Hibernian",
+                        "date": "2025-12-15T19:45:00+00:00",
+                        "home": "Rangers",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Rangers",
+                        "date": "2025-10-29T19:45:00+00:00",
+                        "home": "Hibernian",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "Rangers",
+                        "date": "2025-05-17T11:30:00+00:00",
+                        "home": "Hibernian",
+                        "score": "2-2"
+                    },
+                    {
+                        "away": "Hibernian",
+                        "date": "2025-04-05T14:00:00+00:00",
+                        "home": "Rangers",
+                        "score": "0-2"
+                    },
+                    {
+                        "away": "Rangers",
+                        "date": "2025-01-05T12:00:00+00:00",
+                        "home": "Hibernian",
+                        "score": "3-3"
+                    },
+                    {
+                        "away": "Hibernian",
+                        "date": "2024-09-29T11:00:00+00:00",
+                        "home": "Rangers",
+                        "score": "1-0"
+                    },
+                    {
+                        "away": "Hibernian",
+                        "date": "2024-03-30T15:00:00+00:00",
+                        "home": "Rangers",
+                        "score": "3-1"
+                    },
+                    {
+                        "away": "Rangers",
+                        "date": "2024-01-24T19:45:00+00:00",
+                        "home": "Hibernian",
+                        "score": "0-3"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        },
+        {
+            "id": 207290,
+            "league_id": 55,
+            "season_id": 1446,
+            "home_team_id": 417,
+            "home_team": "Ilves",
+            "away_team_id": 2102,
+            "away_team": "IFK Mariehamn",
+            "home_coach_id": 709,
+            "away_coach_id": 1933,
+            "referee_id": null,
+            "venue_id": 398,
+            "event_date": "2026-08-09T15:00:00+00:00",
+            "status": "notstarted",
+            "replaced_by": null,
+            "round_number": null,
+            "round_name": "",
+            "group_name": null,
+            "period": "",
+            "current_minute": null,
+            "home_score": null,
+            "away_score": null,
+            "home_score_ht": null,
+            "away_score_ht": null,
+            "penalty_shootout": null,
+            "extra_time_score": null,
+            "is_local_derby": false,
+            "is_neutral_ground": false,
+            "travel_distance_km": 262,
+            "weather": {
+                "code": null,
+                "description": null,
+                "wind_speed": 7.8,
+                "temperature_c": 17
+            },
+            "pitch_condition": null,
+            "attendance": null,
+            "live_websocket": true,
+            "websocket_plus": true,
+            "highlights": [],
+            "head_to_head": {
+                "total_matches": 30,
+                "home_wins": 5,
+                "draws": 3,
+                "away_wins": 2,
+                "home_goals": 19,
+                "away_goals": 12,
+                "avg_total_goals": 1.0333333333333334,
+                "home_win_rate": 0.16666666666666666,
+                "away_win_rate": 0.06666666666666667,
+                "recent_matches": [
+                    {
+                        "away": "Ilves",
+                        "date": "2026-04-18T16:00:00+00:00",
+                        "home": "IFK Mariehamn",
+                        "score": "2-2"
+                    },
+                    {
+                        "away": "IFK Mariehamn",
+                        "date": "2025-08-31T14:00:00+00:00",
+                        "home": "Ilves",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "Ilves",
+                        "date": "2025-04-27T15:30:00+00:00",
+                        "home": "IFK Mariehamn",
+                        "score": "3-2"
+                    },
+                    {
+                        "away": "IFK Mariehamn",
+                        "date": "2024-08-11T12:00:00+00:00",
+                        "home": "Ilves",
+                        "score": "2-0"
+                    },
+                    {
+                        "away": "Ilves",
+                        "date": "2024-04-28T15:30:00+00:00",
+                        "home": "IFK Mariehamn",
+                        "score": "0-1"
+                    },
+                    {
+                        "away": "IFK Mariehamn",
+                        "date": "2023-09-27T15:00:00+00:00",
+                        "home": "Ilves",
+                        "score": "2-1"
+                    },
+                    {
+                        "away": "IFK Mariehamn",
+                        "date": "2023-07-15T12:00:00+00:00",
+                        "home": "Ilves",
+                        "score": "0-0"
+                    },
+                    {
+                        "away": "Ilves",
+                        "date": "2023-04-05T15:00:00+00:00",
+                        "home": "IFK Mariehamn",
+                        "score": "1-1"
+                    },
+                    {
+                        "away": "IFK Mariehamn",
+                        "date": "2022-10-02T12:00:00+00:00",
+                        "home": "Ilves",
+                        "score": "2-3"
+                    },
+                    {
+                        "away": "Ilves",
+                        "date": "2022-08-21T15:30:00+00:00",
+                        "home": "IFK Mariehamn",
+                        "score": "1-5"
+                    }
+                ]
+            },
+            "has_xg": false,
+            "previous_leg_event_id": null
+        }
+    ]
+}
