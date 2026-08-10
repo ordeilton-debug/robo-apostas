@@ -1,0 +1,4 @@
+{
+    "erro": "Status code 401",
+    "conteudo": "{\"error\":true,\"status\":401,\"detail\":\"Authentication credentials were not provided.\"}"
+}
