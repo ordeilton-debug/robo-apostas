@@ -1,0 +1,4 @@
+{
+    "erro": "Status code 401",
+    "conteudo": "{\"error\":\"authentication required\",\"code\":\"authentication_required\",\"detail\":\"Send Authorization: Token <YOUR_TOKEN> on every request.\",\"register\":\"https://sports.bzzoiro.com/register/\"}"
+}
